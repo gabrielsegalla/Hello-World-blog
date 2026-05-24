@@ -1,0 +1,48 @@
+:root {
+  --bg: #0a0a14;
+  --bg2: #0f0a1e;
+  --bg3: #13102a;
+  --border: #1e1b4b;
+  --border2: #2d2a6e;
+  --purple: #7c3aed;
+  --purple-light: #a78bfa;
+  --purple-pale: #c4b5fd;
+  --white: #ffffff;
+  --text: #e8f4ff;
+  --muted: #7a9bbf;
+  --dim: #4a5568;
+  --mono: 'JetBrains Mono','Courier New',monospace;
+  --sans: -apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);line-height:1.7;overflow-x:hidden;}
+a{color:inherit;text-decoration:none;}
+button{cursor:pointer;font-family:var(--sans);}
+
+/* Subtle grid background */
+body::before{
+  content:'';position:fixed;inset:0;
+  background-image:radial-gradient(circle,#1e1b4b 1px,transparent 1px);
+  background-size:32px 32px;opacity:.3;pointer-events:none;z-index:0;
+}
+
+/* Prose */
+.prose{font-size:17px;line-height:1.9;color:#c4b5fd;}
+.prose h2{font-size:22px;color:var(--white);margin:2.2rem 0 1rem;font-family:var(--mono);}
+.prose h3{font-size:18px;color:var(--purple-light);margin:1.8rem 0 .8rem;font-family:var(--mono);}
+.prose p{margin-bottom:1.2rem;color:#d1d5db;}
+.prose ul,.prose ol{margin:.8rem 0 1.2rem 1.5rem;}
+.prose li{margin-bottom:.4rem;color:#d1d5db;}
+.prose strong{color:var(--white);}
+.prose em{color:var(--purple-pale);font-style:italic;}
+.prose blockquote{border-left:3px solid var(--purple);padding:.8rem 1.2rem;margin:1.5rem 0;background:rgba(124,58,237,.08);color:var(--purple-pale);font-style:italic;border-radius:0 4px 4px 0;}
+.prose code{font-family:var(--mono);background:var(--bg2);border:1px solid var(--border);padding:2px 6px;border-radius:3px;font-size:14px;color:var(--purple-light);}
+.prose pre{background:var(--bg2);border:1px solid var(--border);padding:1.2rem;border-radius:6px;overflow-x:auto;margin:1.2rem 0;}
+.prose pre code{background:none;border:none;padding:0;font-size:13px;color:#a78bfa;}
+.prose hr{border:none;border-top:1px solid var(--border);margin:2rem 0;}
+
+/* Scrollbar */
+::-webkit-scrollbar{width:6px;}
+::-webkit-scrollbar-track{background:var(--bg);}
+::-webkit-scrollbar-thumb{background:var(--border2);border-radius:3px;}
