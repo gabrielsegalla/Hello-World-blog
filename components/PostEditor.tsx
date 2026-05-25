@@ -25,8 +25,30 @@ export default function PostEditor({ initial }: { initial?: PostData }) {
     tags: '', category: 'Dev', readTime: 5, coverImage: null, published: false,
   })
   const [saving, setSaving] = useState(false)
+  const [uploading, setUploading] = useState(false)
   const [error, setError] = useState('')
   const [preview, setPreview] = useState(false)
+
+  async function uploadCover(file: File) {
+    setUploading(true)
+    setError('')
+    const body = new FormData()
+    body.append('file', file)
+    const res = await fetch('/api/upload', { method: 'POST', body })
+    const data = await res.json().catch(() => ({}))
+    if (res.ok && data.url) {
+      set('coverImage', data.url)
+    } else {
+      setError(data.error || 'Erro ao enviar imagem')
+    }
+    setUploading(false)
+  }
+
+  function onCoverFileChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0]
+    if (file) uploadCover(file)
+    e.target.value = ''
+  }
 
   function set(field: keyof PostData, value: any) {
     setForm(f => {
@@ -78,6 +100,69 @@ export default function PostEditor({ initial }: { initial?: PostData }) {
           <div><label style={lbl}>TÍTULO *</label><input value={form.title} onChange={e=>set('title',e.target.value)} placeholder="Como uso IA no trabalho real..." style={inp}/></div>
           <div><label style={lbl}>SUBTÍTULO</label><input value={form.subtitle ?? ''} onChange={e=>set('subtitle',e.target.value)} placeholder="Não é sobre substituição — é sobre amplificação" style={inp}/></div>
           <div><label style={lbl}>RESUMO</label><textarea value={form.excerpt ?? ''} onChange={e=>set('excerpt',e.target.value)} rows={2} placeholder="Aparece na listagem de artigos..." style={{...inp,resize:'vertical'}}/></div>
+
+          <div style={{ background:'#0f0a1e', border:'1px solid #1e1b4b', borderRadius:8, padding:20 }}>
+            <p style={{ fontSize:11, color:'#7c3aed', letterSpacing:'.1em', marginBottom:14, fontFamily:"'JetBrains Mono',monospace" }}>// capa do artigo</p>
+
+            <div style={{
+              borderRadius:8, overflow:'hidden', border:'1px solid #1e1b4b',
+              background:'#13102a', marginBottom:14, minHeight:160,
+              display:'flex', alignItems:'center', justifyContent:'center',
+            }}>
+              {form.coverImage ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img
+                  src={form.coverImage}
+                  alt="Preview da capa"
+                  style={{ display:'block', width:'100%', maxHeight:220, objectFit:'cover' }}
+                />
+              ) : (
+                <p style={{ fontSize:12, color:'#4a5568', padding:24, textAlign:'center' }}>
+                  Nenhuma capa definida. Envie uma imagem ou cole a URL abaixo.
+                </p>
+              )}
+            </div>
+
+            <div style={{ display:'flex', flexDirection:'column', gap:10 }}>
+              <label style={{
+                ...lbl, display:'inline-flex', alignItems:'center', justifyContent:'center',
+                padding:'10px 14px', background:'#1e1b4b', borderRadius:6, cursor: uploading ? 'wait' : 'pointer',
+                color:'#e8f4ff', marginBottom:0,
+              }}>
+                <input
+                  type="file"
+                  accept="image/jpeg,image/png,image/webp,image/gif"
+                  onChange={onCoverFileChange}
+                  disabled={uploading}
+                  style={{ display:'none' }}
+                />
+                {uploading ? 'Enviando imagem...' : 'Enviar imagem do computador'}
+              </label>
+
+              <p style={{ fontSize:10, color:'#4a5568', textAlign:'center', margin:0 }}>ou cole a URL pública</p>
+
+              <input
+                value={form.coverImage ?? ''}
+                onChange={e => set('coverImage', e.target.value || null)}
+                placeholder="https://seu-bucket.supabase.co/storage/v1/object/public/covers/..."
+                style={inp}
+              />
+
+              {form.coverImage && (
+                <button
+                  type="button"
+                  onClick={() => set('coverImage', null)}
+                  style={{
+                    background:'transparent', border:'1px solid #7f1d1d', color:'#f87171',
+                    padding:'8px 12px', borderRadius:6, fontSize:12, cursor:'pointer', fontFamily:'inherit',
+                  }}
+                >
+                  Remover capa
+                </button>
+              )}
+            </div>
+          </div>
+
           <div>
             <label style={lbl}>CONTEÚDO * (Markdown)</label>
             {preview
@@ -110,29 +195,6 @@ export default function PostEditor({ initial }: { initial?: PostData }) {
               <div>
                 <label style={lbl}>TAGS (vírgula)</label>
                 <input value={form.tags} onChange={e=>set('tags',e.target.value)} placeholder="IA,Carreira,Python" style={inp}/>
-              </div>
-              <div>
-                <label style={lbl}>IMAGEM DE CAPA (URL)</label>
-                <input
-                  value={form.coverImage ?? ''}
-                  onChange={e => set('coverImage', e.target.value || null)}
-                  placeholder="https://seu-bucket.supabase.co/storage/v1/object/public/..."
-                  style={inp}
-                />
-                <p style={{ fontSize: 10, color: '#4a5568', marginTop: 4, lineHeight: 1.45 }}>
-                  Link público da imagem. Aparece na listagem de artigos em /artigos.
-                </p>
-                {form.coverImage && (
-                  <div style={{ marginTop: 10, borderRadius: 8, overflow: 'hidden', border: '1px solid #1e1b4b' }}>
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={form.coverImage}
-                      alt="Preview da capa"
-                      style={{ display: 'block', width: '100%', height: 120, objectFit: 'cover', background: '#13102a' }}
-                      onError={e => { (e.target as HTMLImageElement).style.display = 'none' }}
-                    />
-                  </div>
-                )}
               </div>
               <div style={{ display:'flex', alignItems:'center', gap:10 }}>
                 <input type="checkbox" id="pub" checked={form.published} onChange={e=>set('published',e.target.checked)} style={{width:16,height:16,accentColor:'#7c3aed'}}/>
