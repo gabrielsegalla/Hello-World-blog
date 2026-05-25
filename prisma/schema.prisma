@@ -17,6 +17,7 @@ model Post {
   tags      String   @default("")
   category  String   @default("Dev")
   readTime  Int      @default(5)
+  coverImage String?
   published Boolean  @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

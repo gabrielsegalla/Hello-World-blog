@@ -8,6 +8,7 @@ export interface PostCardData {
   excerpt?: string | null
   category?: string | null
   readTime?: number | null
+  coverImage?: string | null
   createdAt: Date | string
 }
 

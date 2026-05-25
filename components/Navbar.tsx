@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react'
 
 const NAV_LINKS = [
   { href: '/', label: 'Início' },
-  { href: '/#artigos', label: 'Artigos' },
-  { href: '/#categorias', label: 'Categorias' },
+  { href: '/artigos', label: 'Artigos' },
+  { href: '/artigos', label: 'Categorias' },
   { href: '/ebook', label: 'eBook' },
   { href: '/#sobre', label: 'Sobre' },
 ]
@@ -36,8 +36,8 @@ export default function Navbar() {
 
         <div className="navbar-desktop">
           <Link href="/" className="nav-link">Início</Link>
-          <Link href="/#artigos" className="nav-link">Artigos</Link>
-          <Link href="/#categorias" className="nav-link">Categorias</Link>
+          <Link href="/artigos" className="nav-link">Artigos</Link>
+          <Link href="/artigos" className="nav-link">Categorias</Link>
           <Link href="/#sobre" className="nav-link">Sobre</Link>
         </div>
 

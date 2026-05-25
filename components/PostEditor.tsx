@@ -3,12 +3,27 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { parseMarkdown } from '@/lib/markdown'
 
-interface PostData { id?: number; title: string; subtitle: string | null; slug: string; excerpt: string | null; content: string; tags: string; category: string; readTime: number; published: boolean }
+interface PostData {
+  id?: number
+  title: string
+  subtitle: string | null
+  slug: string
+  excerpt: string | null
+  content: string
+  tags: string
+  category: string
+  readTime: number
+  coverImage: string | null
+  published: boolean
+}
 
 export default function PostEditor({ initial }: { initial?: PostData }) {
   const isEdit = !!initial?.id
   const router = useRouter()
-  const [form, setForm] = useState<PostData>(initial || { title:'', subtitle:null, slug:'', excerpt:null, content:'', tags:'', category:'Dev', readTime:5, published:false })
+  const [form, setForm] = useState<PostData>(initial || {
+    title: '', subtitle: null, slug: '', excerpt: null, content: '',
+    tags: '', category: 'Dev', readTime: 5, coverImage: null, published: false,
+  })
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
   const [preview, setPreview] = useState(false)
@@ -95,6 +110,29 @@ export default function PostEditor({ initial }: { initial?: PostData }) {
               <div>
                 <label style={lbl}>TAGS (vírgula)</label>
                 <input value={form.tags} onChange={e=>set('tags',e.target.value)} placeholder="IA,Carreira,Python" style={inp}/>
+              </div>
+              <div>
+                <label style={lbl}>IMAGEM DE CAPA (URL)</label>
+                <input
+                  value={form.coverImage ?? ''}
+                  onChange={e => set('coverImage', e.target.value || null)}
+                  placeholder="https://seu-bucket.supabase.co/storage/v1/object/public/..."
+                  style={inp}
+                />
+                <p style={{ fontSize: 10, color: '#4a5568', marginTop: 4, lineHeight: 1.45 }}>
+                  Link público da imagem. Aparece na listagem de artigos em /artigos.
+                </p>
+                {form.coverImage && (
+                  <div style={{ marginTop: 10, borderRadius: 8, overflow: 'hidden', border: '1px solid #1e1b4b' }}>
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={form.coverImage}
+                      alt="Preview da capa"
+                      style={{ display: 'block', width: '100%', height: 120, objectFit: 'cover', background: '#13102a' }}
+                      onError={e => { (e.target as HTMLImageElement).style.display = 'none' }}
+                    />
+                  </div>
+                )}
               </div>
               <div style={{ display:'flex', alignItems:'center', gap:10 }}>
                 <input type="checkbox" id="pub" checked={form.published} onChange={e=>set('published',e.target.checked)} style={{width:16,height:16,accentColor:'#7c3aed'}}/>

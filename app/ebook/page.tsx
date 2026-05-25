@@ -114,6 +114,19 @@ const FAQ = [
 export default function EbookPage() {
   return (
     <main className="ebook-page">
+      <header className="ebook-page-topbar">
+        <div className="ebook-page-topbar-inner">
+          <Link href="/" className="ebook-page-topbar-brand">
+            <span className="navbar-brand-prompt">&gt;_</span>
+            <span>dev.segalla</span>
+          </Link>
+          <Link href="/" className="ebook-page-blog-link">
+            <span aria-hidden="true">←</span>
+            Acessar o blog
+          </Link>
+        </div>
+      </header>
+
       <section className="ebook-page-hero">
         <div className="ebook-hero-bg" aria-hidden="true">
           <div className="ebook-hero-grid" />
@@ -415,6 +428,10 @@ export default function EbookPage() {
           </div>
           <p className="ebook-page-microcopy">
             🔒 Pagamento seguro via Kiwify · Pix, cartão em até 12x ou boleto
+          </p>
+          <p className="ebook-page-blog-footer">
+            Prefere ler antes de comprar?{' '}
+            <Link href="/">Acesse o blog com artigos gratuitos sobre dev e IA →</Link>
           </p>
         </div>
       </section>

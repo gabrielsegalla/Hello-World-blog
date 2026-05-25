@@ -119,7 +119,7 @@ export default async function Home({ searchParams }: HomeProps) {
                   {grid.map(post => <PostCard key={post.id} post={post} />)}
                 </div>
                 <div className="recent-grid-footer">
-                  <Link href="/#destaque" className="see-all-link">Ver todos os artigos →</Link>
+                  <Link href="/artigos" className="see-all-link">Ver todos os artigos →</Link>
                 </div>
               </>
             )}
@@ -175,7 +175,7 @@ export default async function Home({ searchParams }: HomeProps) {
                 </div>
                 <ul className="category-list">
                   <li className="category-item">
-                    <Link href="/" className={`category-link${cat === 'Todos' ? ' category-link-active' : ''}`}>
+                    <Link href="/artigos" className={`category-link${cat === 'Todos' ? ' category-link-active' : ''}`}>
                       Todos
                     </Link>
                     <span className="category-count">{allPosts.length}</span>
@@ -183,7 +183,7 @@ export default async function Home({ searchParams }: HomeProps) {
                   {categoriesSorted.map(([name, count]) => (
                     <li key={name} className="category-item">
                       <Link
-                        href={`/?cat=${encodeURIComponent(name)}#destaque`}
+                        href={`/artigos?cat=${encodeURIComponent(name)}`}
                         className={`category-link${cat === name ? ' category-link-active' : ''}`}
                       >
                         {name}

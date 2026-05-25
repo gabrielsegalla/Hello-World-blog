@@ -3,12 +3,18 @@ import { useRouter } from 'next/navigation'
 import { useState, useTransition } from 'react'
 
 interface Props {
+  basePath?: string
   initialQuery?: string
   initialCategory?: string
   categories: string[]
 }
 
-export default function HomeSearch({ initialQuery = '', initialCategory = 'Todos', categories }: Props) {
+export default function HomeSearch({
+  basePath = '/',
+  initialQuery = '',
+  initialCategory = 'Todos',
+  categories,
+}: Props) {
   const router = useRouter()
   const [query, setQuery] = useState(initialQuery)
   const [, startTransition] = useTransition()
@@ -18,7 +24,8 @@ export default function HomeSearch({ initialQuery = '', initialCategory = 'Todos
     if (q) params.set('q', q)
     if (cat && cat !== 'Todos') params.set('cat', cat)
     const s = params.toString()
-    return `/${s ? '?' + s : ''}#destaque`
+    const hash = basePath === '/' ? '#destaque' : ''
+    return `${basePath}${s ? `?${s}` : ''}${hash}`
   }
 
   function onSubmit(e: React.FormEvent) {

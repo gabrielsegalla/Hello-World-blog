@@ -7,7 +7,21 @@ export interface PostInput {
   tags: string
   category: string
   readTime: number
+  coverImage: string | null
   published: boolean
+}
+
+function normalizeCoverImage(value: unknown): string | null {
+  if (value == null || value === '') return null
+  const url = String(value).trim()
+  if (!url) return null
+  try {
+    const parsed = new URL(url)
+    if (parsed.protocol !== 'http:' && parsed.protocol !== 'https:') return null
+    return url
+  } catch {
+    return null
+  }
 }
 
 export function sanitizePostInput(body: Record<string, unknown>): PostInput {
@@ -20,6 +34,7 @@ export function sanitizePostInput(body: Record<string, unknown>): PostInput {
     tags: String(body.tags || '').trim(),
     category: String(body.category || 'Dev').trim(),
     readTime: Math.min(60, Math.max(1, Number(body.readTime) || 5)),
+    coverImage: normalizeCoverImage(body.coverImage),
     published: Boolean(body.published),
   }
 }
