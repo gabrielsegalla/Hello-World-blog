@@ -1,22 +1,26 @@
 'use client'
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { parseMarkdown } from '@/lib/markdown'
 
-interface PostData { id?: number; title: string; subtitle: string; slug: string; excerpt: string; content: string; tags: string; category: string; readTime: number; published: boolean }
+interface PostData { id?: number; title: string; subtitle: string | null; slug: string; excerpt: string | null; content: string; tags: string; category: string; readTime: number; published: boolean }
 
 export default function PostEditor({ initial }: { initial?: PostData }) {
   const isEdit = !!initial?.id
   const router = useRouter()
-  const [form, setForm] = useState<PostData>(initial || { title:'', subtitle:'', slug:'', excerpt:'', content:'', tags:'', category:'Dev', readTime:5, published:false })
+  const [form, setForm] = useState<PostData>(initial || { title:'', subtitle:null, slug:'', excerpt:null, content:'', tags:'', category:'Dev', readTime:5, published:false })
   const [saving, setSaving] = useState(false)
   const [error, setError] = useState('')
   const [preview, setPreview] = useState(false)
 
   function set(field: keyof PostData, value: any) {
-    setForm(f => ({ ...f, [field]: value }))
-    if (field === 'title' && !isEdit) {
-      setForm(f => ({ ...f, title: value, slug: value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-').slice(0,80) }))
-    }
+    setForm(f => {
+      const next = { ...f, [field]: value }
+      if (field === 'title' && !isEdit) {
+        next.slug = value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9\s-]/g,'').replace(/\s+/g,'-').slice(0,80)
+      }
+      return next
+    })
   }
 
   async function save(pub: boolean) {
@@ -53,16 +57,16 @@ export default function PostEditor({ initial }: { initial?: PostData }) {
 
       {error && <div style={{ background:'rgba(248,113,113,.1)', border:'1px solid #7f1d1d', borderRadius:6, padding:'12px 16px', marginBottom:20, fontSize:13, color:'#f87171' }}>{error}</div>}
 
-      <div style={{ display:'grid', gridTemplateColumns:'1fr 260px', gap:20, alignItems:'start' }}>
+      <div className="editor-grid" style={{ display:'grid', gridTemplateColumns:'1fr 260px', gap:20, alignItems:'start' }}>
         {/* Editor */}
         <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
           <div><label style={lbl}>TÍTULO *</label><input value={form.title} onChange={e=>set('title',e.target.value)} placeholder="Como uso IA no trabalho real..." style={inp}/></div>
-          <div><label style={lbl}>SUBTÍTULO</label><input value={form.subtitle} onChange={e=>set('subtitle',e.target.value)} placeholder="Não é sobre substituição — é sobre amplificação" style={inp}/></div>
-          <div><label style={lbl}>RESUMO</label><textarea value={form.excerpt} onChange={e=>set('excerpt',e.target.value)} rows={2} placeholder="Aparece na listagem de artigos..." style={{...inp,resize:'vertical'}}/></div>
+          <div><label style={lbl}>SUBTÍTULO</label><input value={form.subtitle ?? ''} onChange={e=>set('subtitle',e.target.value)} placeholder="Não é sobre substituição — é sobre amplificação" style={inp}/></div>
+          <div><label style={lbl}>RESUMO</label><textarea value={form.excerpt ?? ''} onChange={e=>set('excerpt',e.target.value)} rows={2} placeholder="Aparece na listagem de artigos..." style={{...inp,resize:'vertical'}}/></div>
           <div>
             <label style={lbl}>CONTEÚDO * (Markdown)</label>
             {preview
-              ? <div className="prose" dangerouslySetInnerHTML={{__html:form.content}} style={{minHeight:400,background:'#13102a',border:'1px solid #1e1b4b',borderRadius:6,padding:16}}/>
+              ? <div className="prose" dangerouslySetInnerHTML={{__html:parseMarkdown(form.content)}} style={{minHeight:400,background:'#13102a',border:'1px solid #1e1b4b',borderRadius:6,padding:16}}/>
               : <textarea value={form.content} onChange={e=>set('content',e.target.value)} rows={24} placeholder={`## Título\n\nConteúdo em **markdown**...\n\n> citação\n\n- item`} style={{...inp,resize:'vertical',lineHeight:1.7}}/>
             }
           </div>

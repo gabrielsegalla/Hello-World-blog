@@ -1,11 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { verifyToken } from './lib/auth'
 
-export function middleware(req: NextRequest) {
+export async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl
   if (pathname.startsWith('/admin') && !pathname.startsWith('/admin/login')) {
     const token = req.cookies.get('segalla_token')?.value
-    if (!token || !verifyToken(token)) return NextResponse.redirect(new URL('/admin/login', req.url))
+    if (!token || !(await verifyToken(token))) {
+      return NextResponse.redirect(new URL('/admin/login', req.url))
+    }
   }
   return NextResponse.next()
 }

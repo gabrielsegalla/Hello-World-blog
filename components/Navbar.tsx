@@ -1,50 +1,72 @@
 'use client'
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+
+const NAV_LINKS = [
+  { href: '/', label: 'Início' },
+  { href: '/#artigos', label: 'Artigos' },
+  { href: '/#categorias', label: 'Categorias' },
+  { href: '/#ebook', label: 'eBook' },
+  { href: '/#sobre', label: 'Sobre' },
+]
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  useEffect(() => {
+    function onScroll() { setScrolled(window.scrollY > 8) }
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? 'hidden' : ''
+    return () => { document.body.style.overflow = '' }
+  }, [menuOpen])
 
   return (
-    <nav style={{
-      position:'fixed',top:0,left:0,right:0,zIndex:100,
-      background:'rgba(10,10,20,0.92)',backdropFilter:'blur(16px)',
-      borderBottom:'1px solid #1e1b4b',
-    }}>
-      <div style={{maxWidth:1200,margin:'0 auto',padding:'0 5%',height:60,display:'flex',alignItems:'center',justifyContent:'space-between'}}>
-        {/* Logo */}
-        <Link href="/" style={{display:'flex',alignItems:'center',gap:8,fontFamily:"'JetBrains Mono',monospace"}}>
-          <span style={{color:'#7c3aed',fontSize:18,fontWeight:700}}>&gt;_</span>
-          <span style={{color:'#fff',fontSize:15,fontWeight:600}}>dev.segalla</span>
+    <nav className={`navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
+      <div className="navbar-inner">
+        <Link href="/" className="navbar-brand" onClick={() => setMenuOpen(false)}>
+          <span className="navbar-brand-prompt">&gt;_</span>
+          <span className="navbar-brand-name">dev.segalla</span>
         </Link>
 
-        {/* Links */}
-        <div style={{display:'flex',alignItems:'center',gap:32}}>
-          {[
-            {href:'/',label:'Início'},
-            {href:'/#artigos',label:'Artigos'},
-            {href:'/#sobre',label:'Sobre'},
-          ].map(l => (
-            <Link key={l.label} href={l.href} style={{fontSize:14,color:'#7a9bbf',transition:'color .15s'}}
-              onMouseEnter={e=>(e.currentTarget.style.color='#fff')}
-              onMouseLeave={e=>(e.currentTarget.style.color='#7a9bbf')}
-            >{l.label}</Link>
-          ))}
+        <div className="navbar-desktop">
+          <Link href="/" className="nav-link">Início</Link>
+          <Link href="/#artigos" className="nav-link">Artigos</Link>
+          <Link href="/#categorias" className="nav-link">Categorias</Link>
+          <Link href="/#sobre" className="nav-link">Sobre</Link>
         </div>
 
-        {/* CTA */}
-        <Link href="/#ebook" style={{
-          display:'flex',alignItems:'center',gap:8,
-          background:'#7c3aed',color:'#fff',padding:'8px 18px',
-          borderRadius:6,fontSize:13,fontWeight:600,
-          transition:'opacity .15s',
-        }}
-          onMouseEnter={e=>e.currentTarget.style.opacity='.85'}
-          onMouseLeave={e=>e.currentTarget.style.opacity='1'}
-        >
-          <span>📖</span> Comprar eBook
-        </Link>
+        <div className="navbar-actions">
+          <Link href="/#ebook" className="navbar-cta">
+            <span className="navbar-cta-icon" aria-hidden="true">📖</span>
+            <span className="navbar-cta-label">Comprar eBook</span>
+          </Link>
+          <button
+            type="button"
+            className="navbar-toggle"
+            aria-label={menuOpen ? 'Fechar menu' : 'Abrir menu'}
+            aria-expanded={menuOpen}
+            onClick={() => setMenuOpen(v => !v)}
+          >
+            <span aria-hidden="true">{menuOpen ? '✕' : '☰'}</span>
+          </button>
+        </div>
       </div>
+
+      {menuOpen && (
+        <div className="navbar-mobile">
+          {NAV_LINKS.map(l => (
+            <Link key={l.label} href={l.href} className="nav-link-mobile" onClick={() => setMenuOpen(false)}>
+              {l.label}
+            </Link>
+          ))}
+        </div>
+      )}
     </nav>
   )
 }

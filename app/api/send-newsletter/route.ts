@@ -4,7 +4,7 @@ import { isAuthenticated } from '@/lib/auth'
 import { sendNewsletterEmail, buildNewsletterHtml } from '@/lib/resend'
 
 export async function POST(req: NextRequest) {
-  if (!isAuthenticated()) return NextResponse.json({ error: 'Não autorizado' }, { status: 401 })
+  if (!(await isAuthenticated())) return NextResponse.json({ error: 'Não autorizado' }, { status: 401 })
 
   const { postId, subject, customMessage } = await req.json()
 
