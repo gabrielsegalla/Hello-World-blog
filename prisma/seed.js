@@ -144,4 +144,9 @@ A diferença entre as duas tentativas? Investi em inglês. E o medo foi diminuin
   console.log('✅ Seed concluído')
 }
 
-main().catch(console.error).finally(() => prisma.$disconnect())
+main()
+  .catch(error => {
+    console.error(error)
+    process.exit(1)
+  })
+  .finally(() => prisma.$disconnect())
