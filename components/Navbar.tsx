@@ -6,7 +6,7 @@ const NAV_LINKS = [
   { href: '/', label: 'Início' },
   { href: '/#artigos', label: 'Artigos' },
   { href: '/#categorias', label: 'Categorias' },
-  { href: '/#ebook', label: 'eBook' },
+  { href: '/ebook', label: 'eBook' },
   { href: '/#sobre', label: 'Sobre' },
 ]
 
@@ -42,7 +42,7 @@ export default function Navbar() {
         </div>
 
         <div className="navbar-actions">
-          <Link href="/#ebook" className="navbar-cta">
+          <Link href="/ebook" className="navbar-cta">
             <span className="navbar-cta-icon" aria-hidden="true">📖</span>
             <span className="navbar-cta-label">Comprar eBook</span>
           </Link>

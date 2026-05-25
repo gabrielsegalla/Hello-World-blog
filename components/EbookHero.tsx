@@ -2,8 +2,6 @@ import Link from 'next/link'
 import BookTilt from './BookTilt'
 
 export default function EbookHero() {
-  const kiwifyUrl = process.env.NEXT_PUBLIC_KIWIFY_URL || 'https://kiwify.com.br'
-
   return (
     <section className="ebook-hero" id="ebook">
       <div className="ebook-hero-bg" aria-hidden="true">
@@ -50,8 +48,8 @@ export default function EbookHero() {
               <span className="ebook-hero-price-value">27</span>
               <span className="ebook-hero-price-pay">pagamento único · acesso vitalício</span>
             </div>
-            <Link href={kiwifyUrl} target="_blank" className="ebook-hero-button">
-              Comprar eBook
+            <Link href="/ebook" className="ebook-hero-button">
+              Conhecer o eBook
               <span aria-hidden="true">→</span>
             </Link>
           </div>
