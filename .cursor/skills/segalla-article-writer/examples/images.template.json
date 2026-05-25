@@ -1,0 +1,19 @@
+{
+  "slug": "exemplo-mcp-cursor",
+  "images": [
+    {
+      "id": "cover",
+      "role": "cover",
+      "alt": "Ilustração abstrata de editor de código conectado a ferramentas externas",
+      "prompt": "Minimal tech blog illustration, dark background #0a0a14, subtle purple accent #7c3aed, clean flat design with soft glow, abstract representation of code editor connected to external API servers via thin glowing lines, developer workspace aesthetic, no text, no watermark, no logo, professional editorial style, 16:9 composition, wide cinematic",
+      "size": "1536x1024"
+    },
+    {
+      "id": "fig-01",
+      "role": "inline",
+      "alt": "Diagrama simples do fluxo entre agente, servidor MCP e banco de dados",
+      "prompt": "Minimal tech blog illustration, dark background #0a0a14, subtle purple accent #7c3aed, simple isometric diagram with three connected blocks representing AI agent, MCP server and database, flat design, high contrast purple highlights, no text, no letters, no watermark",
+      "size": "1024x1024"
+    }
+  ]
+}

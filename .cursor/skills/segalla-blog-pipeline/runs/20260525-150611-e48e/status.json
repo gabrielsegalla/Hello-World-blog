@@ -1,0 +1,13 @@
+{
+  "runId": "20260525-150611-e48e",
+  "createdAt": "2026-05-25T15:06:14Z",
+  "runDir": "/Users/apple/Downloads/segalla-blog-v2/.cursor/skills/segalla-blog-pipeline/runs/20260525-150611-e48e",
+  "phases": {
+    "init": "done",
+    "research": "done",
+    "write": "done",
+    "publish": "done"
+  },
+  "slug": "guardrails-agentes-codigo-modelos-locais",
+  "postUrl": "https://hello-world-blog-xi.vercel.app/posts/guardrails-agentes-codigo-modelos-locais"
+}

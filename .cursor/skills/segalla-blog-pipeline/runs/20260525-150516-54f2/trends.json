@@ -1,0 +1,394 @@
+{
+  "scannedAt": "2026-05-25T15:05:19Z",
+  "days": 3,
+  "hackerNews": {
+    "ai": [
+      {
+        "title": "Memory has grown to nearly two-thirds of AI chip component costs",
+        "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+        "points": 413,
+        "comments": 446,
+        "date": "2026-05-24T16:31:29Z"
+      },
+      {
+        "title": "Italy moves to Airbus A330 tankers",
+        "url": "https://www.euronews.com/my-europe/2026/05/21/italy-moves-to-airbus-a330-tankers-in-major-nato-aligned-shift",
+        "points": 281,
+        "comments": 116,
+        "date": "2026-05-23T16:02:43Z"
+      },
+      {
+        "title": "Is AI Profitable Yet?",
+        "url": "https://isaiprofitable.com/",
+        "points": 260,
+        "comments": 202,
+        "date": "2026-05-23T02:10:38Z"
+      },
+      {
+        "title": "Microsoft reports AI is more expensive than paying human employees",
+        "url": "https://fortune.com/2026/05/22/microsoft-ai-cost-problem-tokens-agents/",
+        "points": 229,
+        "comments": 70,
+        "date": "2026-05-23T03:44:16Z"
+      },
+      {
+        "title": "DeepSeek to Make Permanent 75% Discount on Flagship AI Model",
+        "url": "https://www.bloomberg.com/news/articles/2026-05-23/deepseek-to-make-permanent-75-discount-on-flagship-ai-model",
+        "points": 209,
+        "comments": 2,
+        "date": "2026-05-24T14:09:33Z"
+      },
+      {
+        "title": "Don't just paste the AI at me",
+        "url": "https://dontquotetheai.com/",
+        "points": 181,
+        "comments": 113,
+        "date": "2026-05-22T22:57:58Z"
+      },
+      {
+        "title": "'AI washing': firms are scrambling to rebrand themselves as tech-focused",
+        "url": "https://www.theguardian.com/technology/2026/may/24/ai-washing-pr-firms-scrambling-rebrand",
+        "points": 167,
+        "comments": 154,
+        "date": "2026-05-24T15:21:28Z"
+      },
+      {
+        "title": "Models.dev: open-source database of AI model specs, pricing, and capabilities",
+        "url": "https://github.com/anomalyco/models.dev",
+        "points": 157,
+        "comments": 27,
+        "date": "2026-05-22T20:26:07Z"
+      },
+      {
+        "title": "Pope Leo XIV says AI must serve humanity, not the powerful few",
+        "url": "https://religionnews.com/2026/05/25/in-his-first-encyclical-pope-leo-xiv-says-ai-must-serve-humanity-not-the-powerful-few/",
+        "points": 154,
+        "comments": 60,
+        "date": "2026-05-25T13:17:58Z"
+      },
+      {
+        "title": "1940 Air Terminal Museum Begins Liquidation",
+        "url": "https://www.1940airterminal.org/news/liquidation-of-simulators",
+        "points": 133,
+        "comments": 31,
+        "date": "2026-05-22T17:05:32Z"
+      },
+      {
+        "title": "Air France and Airbus found guilty of manslaughter over 2009 plane crash",
+        "url": "https://www.bbc.com/news/articles/czd2qmdvmq6o",
+        "points": 132,
+        "comments": 123,
+        "date": "2026-05-23T20:09:13Z"
+      },
+      {
+        "title": "AI keeps inventing fake cases. Lawyers keep citing them",
+        "url": "https://www.scientificamerican.com/article/why-lawyers-keep-citing-fake-cases-invented-by-ai/",
+        "points": 70,
+        "comments": 8,
+        "date": "2026-05-22T20:26:29Z"
+      },
+      {
+        "title": "Netherlands Seizes 800 Servers, Arrests 2 for Aiding Cyberattacks",
+        "url": "https://krebsonsecurity.com/2026/05/netherlands-seizes-800-servers-arrests-2-for-aiding-cyberattacks/",
+        "points": 57,
+        "comments": 6,
+        "date": "2026-05-25T13:56:39Z"
+      },
+      {
+        "title": "Built AI forensic accounting software with my dad",
+        "url": "https://case-trail.com/blog/ai-forensic-accounting-automation",
+        "points": 50,
+        "comments": 40,
+        "date": "2026-05-22T16:19:29Z"
+      },
+      {
+        "title": "Pope Leo: opaque AI run by few firms risks \"New Forms of Dehumanization\"",
+        "url": "https://variety.com/2026/biz/global/pope-leo-ai-encyclical-algorithms-threaten-dehumanisation-1236758186/",
+        "points": 43,
+        "comments": 3,
+        "date": "2026-05-25T13:12:40Z"
+      }
+    ],
+    "programming": [
+      {
+        "title": "Ask HN: How to get back into programming without AI?",
+        "url": "",
+        "points": 7,
+        "comments": 12,
+        "date": "2026-05-25T06:18:00Z"
+      },
+      {
+        "title": "Andy Matuschak: Apps and programming: two accidental tyrannies (MIT Talk) [video]",
+        "url": "https://www.youtube.com/watch?v=ycyCGCtScdc",
+        "points": 7,
+        "comments": 0,
+        "date": "2026-05-23T15:19:30Z"
+      },
+      {
+        "title": "Show HN: My biggest solo-project: Game engine with its own programming language",
+        "url": "https://github.com/ArcadeMakerSources/ArcadeMaker",
+        "points": 4,
+        "comments": 0,
+        "date": "2026-05-25T12:52:47Z"
+      },
+      {
+        "title": "Programming Language Pilang",
+        "url": "https://github.com/rolandbrake/pilang",
+        "points": 4,
+        "comments": 0,
+        "date": "2026-05-23T12:36:55Z"
+      },
+      {
+        "title": "What we lost when we stopped programming",
+        "url": "https://hermanschaaf.com/what-we-lost-when-we-stopped-programming/",
+        "points": 3,
+        "comments": 3,
+        "date": "2026-05-24T14:58:06Z"
+      },
+      {
+        "title": "Programming Sucks",
+        "url": "https://www.stilldrinking.org/programming-sucks",
+        "points": 3,
+        "comments": 1,
+        "date": "2026-05-25T13:15:02Z"
+      },
+      {
+        "title": "Rapira (Рапира) – Soviet programming language interpreter",
+        "url": "https://github.com/begoon/rapira",
+        "points": 3,
+        "comments": 0,
+        "date": "2026-05-25T08:37:36Z"
+      },
+      {
+        "title": "Zero – Programming Language for Agents",
+        "url": "https://github.com/vercel-labs/zerolang",
+        "points": 3,
+        "comments": 0,
+        "date": "2026-05-23T11:13:35Z"
+      },
+      {
+        "title": "The success of 'natural language programming'",
+        "url": "https://brooker.co.za/blog/2025/12/16/natural-language.html",
+        "points": 3,
+        "comments": 0,
+        "date": "2026-05-23T09:30:40Z"
+      },
+      {
+        "title": "PyPie, A DSL for Tensor Programming",
+        "url": "https://pypie.dev",
+        "points": 2,
+        "comments": 1,
+        "date": "2026-05-24T22:09:43Z"
+      },
+      {
+        "title": "C Programming Language Quiz",
+        "url": "https://stefansf.de/c-quiz/",
+        "points": 2,
+        "comments": 0,
+        "date": "2026-05-22T19:45:15Z"
+      },
+      {
+        "title": "Ask HN: How to increase depth instead of breadth as 10 yoe as swe?",
+        "url": "",
+        "points": 9,
+        "comments": 6,
+        "date": "2026-05-23T04:41:09Z"
+      },
+      {
+        "title": "Show HN: Coder Words – An offline-first PWA word puzzle for programmers",
+        "url": "https://7coderwords.kenamick.com/",
+        "points": 8,
+        "comments": 1,
+        "date": "2026-05-22T20:30:02Z"
+      },
+      {
+        "title": "Ask HN: How to learn how to develop real time applications?",
+        "url": "",
+        "points": 5,
+        "comments": 6,
+        "date": "2026-05-23T21:53:23Z"
+      },
+      {
+        "title": "Show HN: My first app, artisanally vibe-coded in 4 months",
+        "url": "https://mijn-travelly.nl/en/",
+        "points": 3,
+        "comments": 4,
+        "date": "2026-05-24T10:07:13Z"
+      }
+    ]
+  },
+  "devTo": {
+    "ai": [
+      {
+        "title": "How we're using Gemini Embeddings to build a smarter, community-driven feed on DEV",
+        "url": "https://dev.to/devteam/how-were-using-gemini-embeddings-to-build-a-smarter-community-driven-feed-on-dev-1b9f",
+        "reactions": 78,
+        "comments": 23,
+        "date": "2026-05-22T16:27:19Z"
+      },
+      {
+        "title": "Google Antigravity 1.0 to 2.0/IDE Quick Migration Guide",
+        "url": "https://dev.to/gde/google-antigravity-10-to-20ide-quick-migration-guide-35p5",
+        "reactions": 20,
+        "comments": 3,
+        "date": "2026-05-22T18:24:09Z"
+      },
+      {
+        "title": "Your company won't replace you with good AI. They'll replace you with bad AI.",
+        "url": "https://dev.to/adioof/your-company-wont-replace-you-with-good-ai-theyll-replace-you-with-bad-ai-5bpm",
+        "reactions": 13,
+        "comments": 4,
+        "date": "2026-05-22T16:06:37Z"
+      },
+      {
+        "title": "The subtle impact of AI (& IT) on jobs",
+        "url": "https://dev.to/tracygjg/the-subtle-impact-of-ai-it-on-jobs-i55",
+        "reactions": 15,
+        "comments": 2,
+        "date": "2026-05-22T16:52:42Z"
+      },
+      {
+        "title": "Don’t let AI break your collective thinking: a practical guide for engineering teams",
+        "url": "https://dev.to/javz/dont-let-ai-break-your-collective-thinking-a-practical-guide-for-engineering-teams-41c4",
+        "reactions": 19,
+        "comments": 2,
+        "date": "2026-05-25T11:20:07Z"
+      },
+      {
+        "title": "I Ditched Cloud LLMs for Gemma 4 4B: A DevOps Engineer's 48-Hour Reality Check",
+        "url": "https://dev.to/asamaes/i-ditched-cloud-llms-for-gemma-4-4b-a-devops-engineers-48-hour-reality-check-a7d",
+        "reactions": 17,
+        "comments": 6,
+        "date": "2026-05-24T19:55:03Z"
+      },
+      {
+        "title": "MIA: A Futuristic AI Desktop Assistant Built with Voice, Gestures, and Controlled Chaos",
+        "url": "https://dev.to/trojanmocx/mia-a-futuristic-ai-desktop-assistant-built-with-voice-gestures-and-controlled-chaos-1259",
+        "reactions": 13,
+        "comments": 0,
+        "date": "2026-05-25T05:32:51Z"
+      },
+      {
+        "title": "My Impression of AI in Programming",
+        "url": "https://dev.to/pauljlucas/my-impression-of-ai-in-programming-33ci",
+        "reactions": 5,
+        "comments": 2,
+        "date": "2026-05-24T14:47:19Z"
+      },
+      {
+        "title": "Build It, Then Use It: How I wrote 435 AI engineering lessons from scratch",
+        "url": "https://dev.to/rohitg00/build-it-then-use-it-how-i-wrote-435-ai-engineering-lessons-from-scratch-5d2d",
+        "reactions": 19,
+        "comments": 4,
+        "date": "2026-05-24T13:50:05Z"
+      },
+      {
+        "title": "From a College Hackathon Idea to an Unfinished Developer Dream — Reviving AlgoPair 🚀",
+        "url": "https://dev.to/hrishika_malviya_cec808f3/from-an-abandoned-hackathon-project-to-an-ai-study-workspace-c86",
+        "reactions": 195,
+        "comments": 12,
+        "date": "2026-05-23T05:36:20Z"
+      },
+      {
+        "title": "Banning Agent PRs Won't Save Open Source",
+        "url": "https://dev.to/entire/why-banning-agent-prs-wont-save-open-source-4822",
+        "reactions": 5,
+        "comments": 4,
+        "date": "2026-05-23T19:52:52Z"
+      },
+      {
+        "title": "Google I/O 2026: AI Built an OS in 12 Hours. I Spent Mine Sorting Screenshots. 🤦",
+        "url": "https://dev.to/aabhassao/google-io-2026-ai-built-an-os-in-12-hours-i-spent-mine-sorting-screenshots-3hgf",
+        "reactions": 12,
+        "comments": 5,
+        "date": "2026-05-24T21:18:41Z"
+      }
+    ],
+    "webdev": [
+      {
+        "title": "Google Antigravity 1.0 to 2.0/IDE Quick Migration Guide",
+        "url": "https://dev.to/gde/google-antigravity-10-to-20ide-quick-migration-guide-35p5",
+        "reactions": 20,
+        "comments": 3,
+        "date": "2026-05-22T18:24:09Z"
+      },
+      {
+        "title": "I Built a Production-Grade E-Commerce Platform in 3 Months — GitHub Copilot Was My Co-Founder",
+        "url": "https://dev.to/syedahmershah/i-built-a-production-grade-e-commerce-platform-in-3-months-github-copilot-was-my-co-founder-11m4",
+        "reactions": 91,
+        "comments": 38,
+        "date": "2026-05-23T20:57:12Z"
+      },
+      {
+        "title": "Found 897 Fake Followers on DEV.to Here's How I Proved It",
+        "url": "https://dev.to/gnomeman4201/found-897-fake-followers-on-devto-heres-how-i-proved-it-2a1k",
+        "reactions": 15,
+        "comments": 2,
+        "date": "2026-05-25T01:00:49Z"
+      },
+      {
+        "title": "Microsoft tried to kill the printer driver. Healthcare said no.",
+        "url": "https://dev.to/thegdsks/microsoft-tried-to-kill-the-printer-driver-healthcare-said-no-28e7",
+        "reactions": 11,
+        "comments": 1,
+        "date": "2026-05-23T06:36:49Z"
+      },
+      {
+        "title": "Managing multiple docker hub accounts using docker-use",
+        "url": "https://dev.to/chiragagg5k/managing-multiple-docker-hub-accounts-using-docker-use-b6p",
+        "reactions": 6,
+        "comments": 1,
+        "date": "2026-05-25T05:08:01Z"
+      },
+      {
+        "title": "Google I/O 2026: AI Built an OS in 12 Hours. I Spent Mine Sorting Screenshots. 🤦",
+        "url": "https://dev.to/aabhassao/google-io-2026-ai-built-an-os-in-12-hours-i-spent-mine-sorting-screenshots-3hgf",
+        "reactions": 12,
+        "comments": 5,
+        "date": "2026-05-24T21:18:41Z"
+      },
+      {
+        "title": "A tool to make your GitHub README impossible to ignore 🚀",
+        "url": "https://dev.to/dhanushnehru/a-tool-to-make-your-github-readme-impossible-to-ignore-19ac",
+        "reactions": 20,
+        "comments": 4,
+        "date": "2026-05-23T08:43:38Z"
+      },
+      {
+        "title": "Everyone's Talking About Gemini 3.5 Flash. The Real Story at Google I/O 2026 Was a Skill File.",
+        "url": "https://dev.to/sreejit_/everyones-talking-about-gemini-35-flash-the-real-story-at-google-io-2026-was-a-skill-file-4f3c",
+        "reactions": 19,
+        "comments": 18,
+        "date": "2026-05-24T08:13:34Z"
+      },
+      {
+        "title": "When AI Reads Blueprints: The Hidden Attack Surface of Multimodal Engineering Intelligence",
+        "url": "https://dev.to/toxy4ny/when-ai-reads-blueprints-the-hidden-attack-surface-of-multimodal-engineering-intelligence-2d7e",
+        "reactions": 10,
+        "comments": 4,
+        "date": "2026-05-23T09:01:51Z"
+      },
+      {
+        "title": "Building MESH: A Civic Resilience Platform With AI Agents",
+        "url": "https://dev.to/furic/building-mesh-a-civic-resilience-platform-with-ai-agents-15jf",
+        "reactions": 5,
+        "comments": 0,
+        "date": "2026-05-23T08:27:29Z"
+      },
+      {
+        "title": "5 million planning poker votes later: the most common card is 3 🃏",
+        "url": "https://dev.to/mattlewandowski93/5-million-planning-poker-votes-later-the-most-common-card-is-3-39dj",
+        "reactions": 22,
+        "comments": 2,
+        "date": "2026-05-22T22:25:15Z"
+      },
+      {
+        "title": "Claude Code Hooks 101: Turning Your AI Coding Assistant Into an Automated Teammate",
+        "url": "https://dev.to/shrsv/claude-code-hooks-101-turning-your-ai-coding-assistant-into-an-automated-teammate-4lee",
+        "reactions": 5,
+        "comments": 0,
+        "date": "2026-05-24T17:24:35Z"
+      }
+    ]
+  }
+}

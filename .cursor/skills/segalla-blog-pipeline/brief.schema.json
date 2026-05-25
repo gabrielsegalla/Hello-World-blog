@@ -1,0 +1,22 @@
+{
+  "$schema": "handoff segalla-blog-pipeline",
+  "required": ["topic", "workingTitle", "slug", "angle", "audience", "keyFindings", "sources", "outline", "category", "tags", "estimatedReadTime"],
+  "fields": {
+    "topic": "string",
+    "workingTitle": "string",
+    "slug": "string — a-z, hífens, max 80",
+    "subtitle": "string | null",
+    "excerpt": "string — 1-2 frases",
+    "angle": "string",
+    "audience": "string",
+    "category": "IA na Prática | Carreira | Dev | Tutoriais | Ferramentas | Inglês",
+    "tags": "string — vírgula",
+    "estimatedReadTime": "number 1-60",
+    "coverImagePrompt": "string | null",
+    "keyFindings": "string[] min 5",
+    "outline": "string[] min 5",
+    "sources": [{ "url": "string", "type": "primária|secundária|opinião", "note": "string", "reliability": "alta|média|baixa" }],
+    "openQuestions": "string[] optional",
+    "selectedFromTrends": { "title": "string", "url": "string", "score": "number" }
+  }
+}

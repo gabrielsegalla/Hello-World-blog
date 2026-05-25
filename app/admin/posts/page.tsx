@@ -1,6 +1,5 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 
 interface Post { id: number; slug: string; title: string; published: boolean; createdAt: string; tags: string; category: string }
@@ -9,7 +8,6 @@ export default function AdminPostsPage() {
   const [posts, setPosts] = useState<Post[]>([])
   const [subs, setSubs] = useState(0)
   const [loading, setLoading] = useState(true)
-  const router = useRouter()
 
   useEffect(() => {
     Promise.all([
@@ -17,11 +15,6 @@ export default function AdminPostsPage() {
       fetch('/api/subscribers').then(r => r.json()),
     ]).then(([p, s]) => { setPosts(p); setSubs(s.length || 0) }).finally(() => setLoading(false))
   }, [])
-
-  async function logout() {
-    await fetch('/api/auth', { method: 'DELETE' })
-    router.push('/admin/login')
-  }
 
   async function deletePost(id: number) {
     if (!confirm('Deletar este post?')) return
@@ -40,18 +33,9 @@ export default function AdminPostsPage() {
           <h1 style={{ fontSize: 22, fontWeight: 700, color: '#fff' }}>Painel</h1>
         </div>
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
-          <Link href="/" target="_blank" style={{ fontSize: 12, color: '#7a9bbf', padding: '8px 14px', border: '1px solid #1e1b4b', borderRadius: 6 }}>
-            Ver site →
-          </Link>
-          <Link href="/admin/newsletter" style={{ fontSize: 12, color: '#a78bfa', padding: '8px 14px', border: '1px solid #3730a3', borderRadius: 6, background: 'rgba(124,58,237,.1)' }}>
-            📨 Newsletter
-          </Link>
           <Link href="/admin/posts/new" style={{ background: '#7c3aed', color: '#fff', padding: '8px 18px', borderRadius: 6, fontSize: 13, fontWeight: 700 }}>
             + Novo artigo
           </Link>
-          <button onClick={logout} style={{ background: 'transparent', border: '1px solid #1e1b4b', color: '#7a9bbf', padding: '8px 14px', borderRadius: 6, fontSize: 12, cursor: 'pointer', fontFamily: 'inherit' }}>
-            Sair
-          </button>
         </div>
       </div>
 

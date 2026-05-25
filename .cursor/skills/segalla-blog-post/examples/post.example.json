@@ -1,0 +1,12 @@
+{
+  "title": "Artigo de exemplo via skill",
+  "slug": "artigo-exemplo-via-skill",
+  "subtitle": "Subtítulo opcional",
+  "excerpt": "Resumo curto que aparece na listagem de /artigos.",
+  "content": "## Introdução\n\nConteúdo em **markdown**.\n\n- Item 1\n- Item 2\n\n## Conclusão\n\nFechamento do artigo.",
+  "tags": "Dev,Automação",
+  "category": "Dev",
+  "readTime": 5,
+  "coverImage": null,
+  "published": false
+}

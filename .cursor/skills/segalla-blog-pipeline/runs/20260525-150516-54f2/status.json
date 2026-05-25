@@ -1,0 +1,13 @@
+{
+  "runId": "20260525-150516-54f2",
+  "createdAt": "2026-05-25T15:05:19Z",
+  "runDir": "/Users/apple/Downloads/segalla-blog-v2/.cursor/skills/segalla-blog-pipeline/runs/20260525-150516-54f2",
+  "phases": {
+    "init": "done",
+    "research": "pending",
+    "write": "pending",
+    "publish": "pending"
+  },
+  "slug": null,
+  "postUrl": null
+}

@@ -1,0 +1,51 @@
+{
+  "topic": "MCP servers no workflow de desenvolvimento com Cursor",
+  "workingTitle": "MCP na prática: o que muda quando o agente acessa suas ferramentas de verdade",
+  "slug": "mcp-na-pratica-workflow-cursor",
+  "subtitle": "Menos prompt manual, mais contexto real do seu stack",
+  "angle": "Experiência prática integrando MCP ao dia a dia de dev, com trade-offs reais e não só o tutorial oficial",
+  "audience": "Devs pleno/sênior que já usam Cursor ou Copilot e querem ir além do chat básico",
+  "category": "IA na Prática",
+  "tags": "MCP,Cursor,IA,DevTools,Produtividade",
+  "estimatedReadTime": 10,
+  "coverImage": null,
+  "keyFindings": [
+    "MCP padroniza como LLMs chamam ferramentas externas (APIs, DB, filesystem scoped)",
+    "Cursor expõe MCP servers na config do projeto e no settings global",
+    "Principal ganho: agente busca contexto sem colar manualmente logs/docs",
+    "Risco: permissões amplas demais expõem secrets se mal configurado",
+    "Ainda é ecossistema jovem: breaking changes e docs esparsas em servidores community"
+  ],
+  "outline": [
+    "O problema: agente sem contexto vira autocomplete caro",
+    "O que é MCP em 2 minutos (sem buzzword)",
+    "Setup mínimo funcional no Cursor",
+    "Caso real: [exemplo concreto a preencher na pesquisa]",
+    "Segurança e o que não conectar",
+    "Conclusão: quando vale e quando não vale o setup"
+  ],
+  "sources": [
+    {
+      "url": "https://modelcontextprotocol.io/",
+      "type": "primária",
+      "note": "Spec oficial do protocolo",
+      "reliability": "alta"
+    },
+    {
+      "url": "https://docs.cursor.com/context/mcp",
+      "type": "primária",
+      "note": "Config MCP no Cursor",
+      "reliability": "alta"
+    }
+  ],
+  "openQuestions": [
+    "Quais MCP servers a comunidade mais usa em maio 2026?",
+    "Há benchmark de latência com múltiplos servers?"
+  ],
+  "competitorCoverage": [
+    {
+      "url": "https://example.com/generic-mcp-guide",
+      "gap": "Só instala, não fala de segurança nem CI"
+    }
+  ]
+}

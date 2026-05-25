@@ -1,0 +1,394 @@
+{
+  "scannedAt": "2026-05-25T15:06:14Z",
+  "days": 7,
+  "hackerNews": {
+    "ai": [
+      {
+        "title": "AI is just unauthorised plagiarism at a bigger scale",
+        "url": "https://axelk.ee/ai-is-just-unauthorised-plagiarism-at-a-bigger-scale/",
+        "points": 820,
+        "comments": 732,
+        "date": "2026-05-21T13:38:12Z"
+      },
+      {
+        "title": "Throwing AI-generated walls of text into conversations",
+        "url": "https://noslopgrenade.com/",
+        "points": 706,
+        "comments": 418,
+        "date": "2026-05-21T09:31:15Z"
+      },
+      {
+        "title": "Steve Wozniak cheered after telling students they have AI – actual intelligence",
+        "url": "https://www.businessinsider.com/steve-wozniak-apple-ai-graduation-speech-2026-5",
+        "points": 648,
+        "comments": 545,
+        "date": "2026-05-22T09:04:54Z"
+      },
+      {
+        "title": "We stopped AI bot spam in our GitHub repo using Git's –author flag",
+        "url": "https://archestra.ai/blog/only-responsible-ai",
+        "points": 499,
+        "comments": 237,
+        "date": "2026-05-18T15:24:19Z"
+      },
+      {
+        "title": "Memory has grown to nearly two-thirds of AI chip component costs",
+        "url": "https://epoch.ai/data-insights/ai-chip-component-cost-shares",
+        "points": 413,
+        "comments": 446,
+        "date": "2026-05-24T16:31:29Z"
+      },
+      {
+        "title": "Remove-AI-Watermarks – CLI and library for removing AI watermarks from images",
+        "url": "https://github.com/wiltodelta/remove-ai-watermarks",
+        "points": 385,
+        "comments": 258,
+        "date": "2026-05-19T22:30:31Z"
+      },
+      {
+        "title": "College students drown out AI-praising commencement speeches with boos",
+        "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/college-students-drown-out-ai-praising-commencement-speeches-with-boos-deal-with-it-one-speaker-fires-back-as-students-heckle-positive-pitches-for-ais-role",
+        "points": 378,
+        "comments": 386,
+        "date": "2026-05-20T11:51:32Z"
+      },
+      {
+        "title": "We let AIs run radio stations",
+        "url": "https://andonlabs.com/blog/andon-fm",
+        "points": 372,
+        "comments": 271,
+        "date": "2026-05-18T18:12:18Z"
+      },
+      {
+        "title": "Shunning AI is the human choice",
+        "url": "https://www.thehandbasket.co/p/hating-ai-is-good-actually",
+        "points": 371,
+        "comments": 538,
+        "date": "2026-05-21T13:36:06Z"
+      },
+      {
+        "title": "AI has a multiplying effect on existing technical skills",
+        "url": "https://www.joshwcomeau.com/email/wham-launch-005-elephant-2-p/",
+        "points": 338,
+        "comments": 311,
+        "date": "2026-05-22T13:22:42Z"
+      },
+      {
+        "title": "Mistral AI acquires Emmi AI",
+        "url": "https://www.emmi.ai/news/mistral-ai-acquires-emmi-ai",
+        "points": 337,
+        "comments": 98,
+        "date": "2026-05-19T19:14:12Z"
+      },
+      {
+        "title": "Google’s AI is being manipulated. The search giant is quietly fighting back",
+        "url": "https://www.bbc.com/future/article/20260519-google-tackles-attempts-to-hack-its-ai-results",
+        "points": 336,
+        "comments": 213,
+        "date": "2026-05-20T10:57:09Z"
+      },
+      {
+        "title": "OpenAI Adopts Google's SynthID Watermark for AI Images with Verification Tool",
+        "url": "https://openai.com/index/advancing-content-provenance/",
+        "points": 332,
+        "comments": 180,
+        "date": "2026-05-19T19:34:30Z"
+      },
+      {
+        "title": "Italy moves to Airbus A330 tankers",
+        "url": "https://www.euronews.com/my-europe/2026/05/21/italy-moves-to-airbus-a330-tankers-in-major-nato-aligned-shift",
+        "points": 281,
+        "comments": 116,
+        "date": "2026-05-23T16:02:43Z"
+      },
+      {
+        "title": "Is AI Profitable Yet?",
+        "url": "https://isaiprofitable.com/",
+        "points": 260,
+        "comments": 202,
+        "date": "2026-05-23T02:10:38Z"
+      }
+    ],
+    "programming": [
+      {
+        "title": "Programming as Theory Building (1985) [pdf]",
+        "url": "https://gwern.net/doc/cs/algorithm/1985-naur.pdf",
+        "points": 40,
+        "comments": 1,
+        "date": "2026-05-19T16:35:32Z"
+      },
+      {
+        "title": "The Programming Language for Agents",
+        "url": "https://zerolang.ai",
+        "points": 20,
+        "comments": 7,
+        "date": "2026-05-19T14:09:50Z"
+      },
+      {
+        "title": "Humble Tech Book Bundle: The Ultimate Functional Programming",
+        "url": "https://www.humblebundle.com/books/ultimate-functional-programming-pragmatic-programmers-books",
+        "points": 17,
+        "comments": 11,
+        "date": "2026-05-19T05:48:15Z"
+      },
+      {
+        "title": "The XGO Programming Language",
+        "url": "https://github.com/goplus/xgo",
+        "points": 8,
+        "comments": 1,
+        "date": "2026-05-21T18:44:57Z"
+      },
+      {
+        "title": "Ask HN: How to get back into programming without AI?",
+        "url": "",
+        "points": 7,
+        "comments": 12,
+        "date": "2026-05-25T06:18:00Z"
+      },
+      {
+        "title": "Andy Matuschak: Apps and programming: two accidental tyrannies (MIT Talk) [video]",
+        "url": "https://www.youtube.com/watch?v=ycyCGCtScdc",
+        "points": 7,
+        "comments": 0,
+        "date": "2026-05-23T15:19:30Z"
+      },
+      {
+        "title": "What I learned from tinkering with programming languages in the last 34 days",
+        "url": "",
+        "points": 4,
+        "comments": 2,
+        "date": "2026-05-22T05:10:47Z"
+      },
+      {
+        "title": "Show HN: Building a Programming Language for Myself",
+        "url": "https://blog.aawadia.dev/2026/05/19/teak-lang/",
+        "points": 4,
+        "comments": 2,
+        "date": "2026-05-20T01:51:53Z"
+      },
+      {
+        "title": "Show HN: My biggest solo-project: Game engine with its own programming language",
+        "url": "https://github.com/ArcadeMakerSources/ArcadeMaker",
+        "points": 4,
+        "comments": 0,
+        "date": "2026-05-25T12:52:47Z"
+      },
+      {
+        "title": "Programming Language Pilang",
+        "url": "https://github.com/rolandbrake/pilang",
+        "points": 4,
+        "comments": 0,
+        "date": "2026-05-23T12:36:55Z"
+      },
+      {
+        "title": "Why English will never be a programming language",
+        "url": "https://www.slater.dev/2026/05/why-english-will-never-be-a-programming-language/",
+        "points": 3,
+        "comments": 4,
+        "date": "2026-05-20T17:02:56Z"
+      },
+      {
+        "title": "What we lost when we stopped programming",
+        "url": "https://hermanschaaf.com/what-we-lost-when-we-stopped-programming/",
+        "points": 3,
+        "comments": 3,
+        "date": "2026-05-24T14:58:06Z"
+      },
+      {
+        "title": "Programming Sucks",
+        "url": "https://www.stilldrinking.org/programming-sucks",
+        "points": 3,
+        "comments": 1,
+        "date": "2026-05-25T13:15:02Z"
+      },
+      {
+        "title": "Zero – the new programming language for AI – is basically Rust",
+        "url": "https://thetechvillain.substack.com/p/zero-the-new-programming-language",
+        "points": 3,
+        "comments": 1,
+        "date": "2026-05-18T17:58:38Z"
+      },
+      {
+        "title": "Rapira (Рапира) – Soviet programming language interpreter",
+        "url": "https://github.com/begoon/rapira",
+        "points": 3,
+        "comments": 0,
+        "date": "2026-05-25T08:37:36Z"
+      }
+    ]
+  },
+  "devTo": {
+    "ai": [
+      {
+        "title": "How we're using Gemini Embeddings to build a smarter, community-driven feed on DEV",
+        "url": "https://dev.to/devteam/how-were-using-gemini-embeddings-to-build-a-smarter-community-driven-feed-on-dev-1b9f",
+        "reactions": 78,
+        "comments": 23,
+        "date": "2026-05-22T16:27:19Z"
+      },
+      {
+        "title": "Demystifying AI Agents with Turtle & Gemma",
+        "url": "https://dev.to/googleai/demystifying-ai-agents-with-turtle-gemma-4ajj",
+        "reactions": 62,
+        "comments": 22,
+        "date": "2026-05-19T00:37:24Z"
+      },
+      {
+        "title": "The Most Concerning AI Risk of 2026",
+        "url": "https://dev.to/sachagreif/the-most-concerning-ai-risk-of-2026-3m0d",
+        "reactions": 58,
+        "comments": 19,
+        "date": "2026-05-22T06:49:44Z"
+      },
+      {
+        "title": "From Years to Hours",
+        "url": "https://dev.to/annaspies/from-years-to-hours-joe",
+        "reactions": 53,
+        "comments": 8,
+        "date": "2026-05-21T01:37:32Z"
+      },
+      {
+        "title": "Google Antigravity 1.0 to 2.0/IDE Quick Migration Guide",
+        "url": "https://dev.to/gde/google-antigravity-10-to-20ide-quick-migration-guide-35p5",
+        "reactions": 20,
+        "comments": 3,
+        "date": "2026-05-22T18:24:09Z"
+      },
+      {
+        "title": "I Used to Get Excited About New Tools Now I Feel Tired.",
+        "url": "https://dev.to/harsh2644/i-used-to-get-excited-about-new-tools-now-i-feel-tired-1e18",
+        "reactions": 74,
+        "comments": 63,
+        "date": "2026-05-21T10:19:01Z"
+      },
+      {
+        "title": "Your company won't replace you with good AI. They'll replace you with bad AI.",
+        "url": "https://dev.to/adioof/your-company-wont-replace-you-with-good-ai-theyll-replace-you-with-bad-ai-5bpm",
+        "reactions": 13,
+        "comments": 4,
+        "date": "2026-05-22T16:06:37Z"
+      },
+      {
+        "title": "Frameworks Are No Longer Being Designed Only for Humans",
+        "url": "https://dev.to/hemapriya_kanagala/frameworks-are-no-longer-being-designed-only-for-humans-13de",
+        "reactions": 34,
+        "comments": 29,
+        "date": "2026-05-21T13:25:43Z"
+      },
+      {
+        "title": "AI Agent Failure Modes Beyond Hallucination",
+        "url": "https://dev.to/maximsaplin/ai-agent-failure-modes-beyond-hallucination-208g",
+        "reactions": 21,
+        "comments": 16,
+        "date": "2026-05-22T14:59:09Z"
+      },
+      {
+        "title": "Building a Database Performance Testing Tool With AI: The Honest Breakdown",
+        "url": "https://dev.to/m4rri4nne/building-a-database-performance-testing-tool-with-ai-the-honest-breakdown-3c0c",
+        "reactions": 67,
+        "comments": 6,
+        "date": "2026-05-21T15:37:54Z"
+      },
+      {
+        "title": "I Raised Gemma 4's Token Cap. The Dense Model Stopped Refusing.",
+        "url": "https://dev.to/alimafana/i-raised-gemma-4s-token-cap-the-dense-model-stopped-refusing-895",
+        "reactions": 20,
+        "comments": 9,
+        "date": "2026-05-21T14:06:08Z"
+      },
+      {
+        "title": "Google AI Edge Gallery Now Runs MCP On-Device. The Privacy Architecture",
+        "url": "https://dev.to/om_shree_0709/google-ai-edge-gallery-now-runs-mcp-on-device-the-privacy-architecture-5075",
+        "reactions": 47,
+        "comments": 26,
+        "date": "2026-05-20T00:44:23Z"
+      }
+    ],
+    "webdev": [
+      {
+        "title": "The Most Concerning AI Risk of 2026",
+        "url": "https://dev.to/sachagreif/the-most-concerning-ai-risk-of-2026-3m0d",
+        "reactions": 58,
+        "comments": 19,
+        "date": "2026-05-22T06:49:44Z"
+      },
+      {
+        "title": "Recycling made easy: a Polish recycling assistant powered by Gemma 4",
+        "url": "https://dev.to/klaudiagrz/recycling-made-easy-a-polish-recycling-assistant-powered-by-gemma-4-j0a",
+        "reactions": 67,
+        "comments": 54,
+        "date": "2026-05-21T18:55:21Z"
+      },
+      {
+        "title": "Google Antigravity 1.0 to 2.0/IDE Quick Migration Guide",
+        "url": "https://dev.to/gde/google-antigravity-10-to-20ide-quick-migration-guide-35p5",
+        "reactions": 20,
+        "comments": 3,
+        "date": "2026-05-22T18:24:09Z"
+      },
+      {
+        "title": "What Happens When You Run `npm run dev`",
+        "url": "https://dev.to/lovestaco/what-happens-when-you-run-npm-run-dev-ae9",
+        "reactions": 39,
+        "comments": 7,
+        "date": "2026-05-19T18:45:40Z"
+      },
+      {
+        "title": "I Built a Production-Grade E-Commerce Platform in 3 Months — GitHub Copilot Was My Co-Founder",
+        "url": "https://dev.to/syedahmershah/i-built-a-production-grade-e-commerce-platform-in-3-months-github-copilot-was-my-co-founder-11m4",
+        "reactions": 91,
+        "comments": 38,
+        "date": "2026-05-23T20:57:12Z"
+      },
+      {
+        "title": "Great Little Software: Rackula",
+        "url": "https://dev.to/valeriavg/great-little-software-rackula-1pa1",
+        "reactions": 14,
+        "comments": 1,
+        "date": "2026-05-19T16:31:46Z"
+      },
+      {
+        "title": "Building a Production Company Website on AWS — Project Overview",
+        "url": "https://dev.to/josh_blair/building-a-production-company-website-on-aws-project-overview-2dhm",
+        "reactions": 47,
+        "comments": 3,
+        "date": "2026-05-21T00:05:06Z"
+      },
+      {
+        "title": "Found 897 Fake Followers on DEV.to Here's How I Proved It",
+        "url": "https://dev.to/gnomeman4201/found-897-fake-followers-on-devto-heres-how-i-proved-it-2a1k",
+        "reactions": 15,
+        "comments": 2,
+        "date": "2026-05-25T01:00:49Z"
+      },
+      {
+        "title": "Rate Limiting Strategies in Go: Token Bucket, Leaky Bucket, and Sliding Window",
+        "url": "https://dev.to/lovestaco/rate-limiting-strategies-in-go-token-bucket-leaky-bucket-and-sliding-window-3fnh",
+        "reactions": 34,
+        "comments": 2,
+        "date": "2026-05-20T19:07:53Z"
+      },
+      {
+        "title": "I built a free debugger because Next.js 16 'use cache' was completely invisible during development",
+        "url": "https://dev.to/shubhradev/i-built-a-free-debugger-because-nextjs-16-use-cache-was-completely-invisible-during-development-4a8",
+        "reactions": 17,
+        "comments": 14,
+        "date": "2026-05-19T10:29:28Z"
+      },
+      {
+        "title": "API Calls Done Right: From Messy Fetch to Clean Data Layer",
+        "url": "https://dev.to/gavincettolo/api-calls-done-right-from-messy-fetch-to-clean-data-layer-419i",
+        "reactions": 59,
+        "comments": 51,
+        "date": "2026-05-19T07:30:00Z"
+      },
+      {
+        "title": "Hermes Agent: Autonomous SEO engineer for 11ty",
+        "url": "https://dev.to/digital-abetka/hermes-agent-autonomous-seo-engineer-for-11ty-50g6",
+        "reactions": 10,
+        "comments": 0,
+        "date": "2026-05-20T07:59:37Z"
+      }
+    ]
+  }
+}

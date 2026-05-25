@@ -1,0 +1,47 @@
+{
+  "topic": "Guardrails para agentes de código com modelos locais (Forge)",
+  "workingTitle": "Modelo local de 8B não basta para agente de código: o que guardrails mudam na prática",
+  "slug": "guardrails-agentes-codigo-modelos-locais",
+  "subtitle": "A matemática de falha composta e a infraestrutura que está faltando no seu workflow",
+  "excerpt": "Rodar LLM local para agente parece barato até você fazer a conta de quantos passos precisam acertar seguidos. Guardrails, plano antes de implementar e revisão humana mudam o jogo.",
+  "angle": "Explicar por que agentes locais falham por acúmulo de erro, o que projetos como Forge e Plan agents resolvem, e o que ainda depende de disciplina humana",
+  "audience": "Devs pleno/sênior que testam Cursor, Ollama ou Copilot Agent e batem na parede de confiabilidade",
+  "category": "IA na Prática",
+  "tags": "IA,Agentes,DevTools,Open Source,Produtividade",
+  "estimatedReadTime": 11,
+  "coverImagePrompt": "Minimal tech blog illustration, dark background #0a0a14, subtle purple accent #7c3aed, abstract local GPU chip connected to code editor with guardrail shield symbols, no text, professional editorial 16:9",
+  "keyFindings": [
+    "Forge (open source, MIT) subiu no HN em maio/2026 com claim de elevar Ministral 8B de ~53% para ~99% em workflows agentic via guardrails, não via modelo maior",
+    "Erro composto: 90% de acerto por passo em workflow de 5 etapas vira ~59% de sucesso total (0.9^5)",
+    "VS Code e Visual Studio ganharam Plan agent separado: plano antes de implementação, salvo em markdown, implementação só após aprovação",
+    "Repos open source estão sendo inundados por PRs e issues de bots de IA; Archestra bloqueou contribuidores não onboardados",
+    "Padrão emergente de agent ops: branch dedicada, diff review, credenciais escopadas, logs de tool calls",
+    "Proxy mode do Forge funciona como camada OpenAI-compatible entre clientes (Continue, aider) e backend local",
+    "Paper do Forge aceito no ACM CAIS 2026 com 97 configurações de modelo/backend testadas"
+  ],
+  "outline": [
+    "Por que agente local parece barato e quebra na terceira ferramenta",
+    "A matemática que ninguém faz na planilha",
+    "O que são guardrails de verdade (Forge como exemplo)",
+    "Plano antes de código: Plan agent no VS Code",
+    "Agent ops mínimo que funciona em time pequeno",
+    "Limitações e o que ainda é hype",
+    "O que testar amanhã no seu repo"
+  ],
+  "sources": [
+    {"url": "https://github.com/antoinezambelli/forge", "type": "primária", "note": "Repo Forge, proxy mode, WorkflowRunner, guardrails", "reliability": "alta"},
+    {"url": "https://news.ycombinator.com/item?id=48192383", "type": "secundária", "note": "Discussão HN 681 pts, números do paper", "reliability": "alta"},
+    {"url": "https://code.visualstudio.com/docs/copilot/agents/planning", "type": "primária", "note": "Plan agent oficial VS Code", "reliability": "alta"},
+    {"url": "https://devblogs.microsoft.com/visualstudio/plan-before-you-build-introducing-the-plan-agent-in-visual-studio/", "type": "primária", "note": "Plan agent Visual Studio, arquivo .copilot/plans/", "reliability": "alta"},
+    {"url": "https://dev.to/jenueldev/ai-coding-agents-are-growing-up-most-workflows-are-not-4khn", "type": "opinião", "note": "Agent ops, segurança, branches", "reliability": "média"},
+    {"url": "https://archestra.ai/blog/only-responsible-ai", "type": "secundária", "note": "Spam de bots em OSS, whitelist contribuidores", "reliability": "alta"},
+    {"url": "https://sdtimes.com/ai/from-llm-first-to-code-first-lessons-from-building-enterprise-ai-systems/", "type": "opinião", "note": "Arquitetura code-first vs LLM-first", "reliability": "média"},
+    {"url": "https://dev.to/muskan_8abedcc7e12/per-agent-quotas-for-mcp-the-token-budget-that-stopped-one-agent-from-burning-80-of-the-daily-38o7", "type": "secundária", "note": "Quotas MCP por agente, FinOps", "reliability": "média"},
+    {"url": "https://vaganerd.com/artigos/inteligencia-artificial-desenvolvedores-2026/", "type": "secundária", "note": "Mercado BR valoriza julgamento sobre velocidade", "reliability": "média"}
+  ],
+  "selectedFromTrends": {
+    "title": "Show HN: Forge – Guardrails take an 8B model from 53% to 99% on agentic tasks",
+    "url": "https://news.ycombinator.com/item?id=48192383",
+    "score": 9.2
+  }
+}

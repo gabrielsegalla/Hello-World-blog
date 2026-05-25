@@ -1,0 +1,102 @@
+{
+  "topic": "Hype do Hermes Agent (Nous Research) e o que isso significa para devs",
+  "workingTitle": "O hype do Hermes Agent: memória que aprende ou só mais um agente open source?",
+  "slug": "hype-hermes-agent-nous-research",
+  "subtitle": "140 mil estrelas, OpenRouter no topo e a promessa de um agente que não esquece tudo na próxima sessão",
+  "excerpt": "Hermes Agent explodiu em 2026 com crescimento mais rápido que OpenClaw. Vale a pena instalar agora ou é só hype de GitHub stars?",
+  "angle": "Análise crítica do fenômeno Hermes Agent para devs: o que é de fato, por que viralizou, trade-offs de segurança e quando faz sentido testar",
+  "audience": "Devs que acompanham agentes de código, OpenClaw, Claude Code e querem entender o Hermes sem cair no discurso de marketing",
+  "category": "IA na Prática",
+  "tags": "Hermes,Agentes,Open Source,Nous Research,OpenClaw,IA",
+  "estimatedReadTime": 12,
+  "coverImagePrompt": "Abstract open-source AI agent with growing skill library, dark purple tech blog style",
+  "keyFindings": [
+    "Hermes Agent foi lançado em 25/fev/2026 pela Nous Research (MIT, Python) com tagline 'the agent that grows with you'",
+    "Repo passou de 0 a ~57k stars em 6 semanas e ~167k stars até maio/2026, crescimento semanal maior que OpenClaw no mesmo estágio",
+    "Em 10/mai/2026 superou OpenClaw no ranking diário de tokens da OpenRouter (224B vs 186B), indicador de adoção ativa",
+    "Diferencial técnico: loop de aprendizado (skills em Markdown via agentskills.io), memória em 3 camadas com MEMORY.md/USER.md limitados + SQLite FTS5 + 8 providers externos",
+    "14 plataformas de mensagem num único gateway; 200+ modelos via OpenRouter/Nous Portal/Ollama/vLLM",
+    "Riscos reais: CVEs em componentes, auditoria com achados críticos em config default, bypass de approvals em gateway mode documentado em issues públicas",
+    "Hermes 3 (LLM, 2024) é linha separada: modelos instruct com function calling; o hype atual é sobre Hermes Agent, não só o modelo"
+  ],
+  "outline": [
+    "Por que todo mundo está falando de Hermes agora",
+    "Hermes Agent vs Hermes 3: não confunda as duas coisas",
+    "O que o agente faz de diferente (skills, memória, gateway)",
+    "Números do hype: stars, tokens e ecossistema",
+    "Hermes vs OpenClaw vs Claude Code: complementares, não substitutos",
+    "Segurança: o que a documentação promete e o que ainda quebra",
+    "Quando testar, quando esperar e o que medir na sua stack"
+  ],
+  "sources": [
+    {
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "type": "primária",
+      "note": "Repositório oficial, README e licença MIT",
+      "reliability": "alta"
+    },
+    {
+      "url": "https://hermesatlas.com/reports/state-of-hermes-april-2026",
+      "type": "secundária",
+      "note": "Relatório detalhado de crescimento e arquitetura (abril 2026)",
+      "reliability": "média"
+    },
+    {
+      "url": "https://hermes-agent.nousresearch.com/docs/user-guide/security",
+      "type": "primária",
+      "note": "Modelo de segurança defense-in-depth do projeto",
+      "reliability": "alta"
+    },
+    {
+      "url": "https://blogs.nvidia.com/blog/rtx-ai-garage-hermes-agent-dgx-spark/",
+      "type": "secundária",
+      "note": "Parceria NVIDIA, uso local em RTX/DGX Spark",
+      "reliability": "alta"
+    },
+    {
+      "url": "http://www.techtimes.com/articles/316694/20260515/nous-researchs-hermes-agent-dethrones-openclaw-worlds-most-used-open-source-ai-agent.htm",
+      "type": "secundária",
+      "note": "OpenRouter daily tokens maio 2026",
+      "reliability": "média"
+    },
+    {
+      "url": "https://github.com/NousResearch/hermes-agent-self-evolution",
+      "type": "primária",
+      "note": "Projeto DSPy+GEPA para evolução de skills",
+      "reliability": "alta"
+    },
+    {
+      "url": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-8B",
+      "type": "primária",
+      "note": "Família Hermes 3 LLM (ago/2024)",
+      "reliability": "alta"
+    },
+    {
+      "url": "https://nousresearch.com/wp-content/uploads/2024/08/Hermes-3-Technical-Report.pdf",
+      "type": "primária",
+      "note": "Technical report Hermes 3",
+      "reliability": "alta"
+    },
+    {
+      "url": "https://github.com/NousResearch/hermes-agent/issues/30882",
+      "type": "primária",
+      "note": "Bug de approvals bypass em gateway mode",
+      "reliability": "alta"
+    },
+    {
+      "url": "https://labs.cloudsecurityalliance.org/research/csa-research-note-hermes-agent-cves-20260504-csa-styled/",
+      "type": "secundária",
+      "note": "CVEs e auditoria de segurança comparativa",
+      "reliability": "alta"
+    }
+  ],
+  "openQuestions": [
+    "O ranking diário da OpenRouter se sustenta no verão de 2026?",
+    "Benchmarks públicos de melhoria composta via skills ainda são escassos"
+  ],
+  "selectedFromTrends": {
+    "title": "Hermes Agent hype (tópico definido pelo usuário)",
+    "url": "https://github.com/NousResearch/hermes-agent",
+    "score": 10
+  }
+}

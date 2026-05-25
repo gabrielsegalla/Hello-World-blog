@@ -30,53 +30,53 @@ export const metadata: Metadata = {
 const CHAPTERS = [
   {
     n: '01',
-    title: 'Por que programar (e por que isso vai mudar sua vida)',
-    desc: 'A real sobre o mercado, salários e por que dev é uma das poucas profissões que ainda funciona como um elevador social.',
+    title: 'Minha Jornada Até Aqui',
+    desc: 'De jovem aprendiz ganhando R$300/mês, fazendo escola + vôlei + curso técnico à noite, até trabalhar para empresas internacionais. A história real — com os traumas, os erros e as viradas.',
   },
   {
     n: '02',
-    title: 'Escolhendo sua primeira linguagem sem travar 6 meses',
-    desc: 'Python, JavaScript, Java, Go… esquece o hype. Vou te mostrar como escolher baseado no seu objetivo — não na thread do Twitter.',
+    title: 'O que é ser Programador?',
+    desc: 'Não é o hacker de filme. É resolver problemas. As especializações da área, o que cada uma exige, e por que soft skills importam tanto quanto técnicas.',
   },
   {
     n: '03',
-    title: 'O método anti-tutorial-hell',
-    desc: 'Por que você assiste curso e não consegue codar nada sozinho — e o método que eu uso pra aprender qualquer stack em 30 dias.',
+    title: 'Por Onde Começar?',
+    desc: 'Sem paralisia de análise. O caminho que funciona: área, linguagem, Git, GitHub, rotina de estudos, Pomodoro, primeiros projetos.',
   },
   {
     n: '04',
-    title: 'IA como copiloto, não como muleta',
-    desc: 'Como usar ChatGPT, Cursor e Copilot pra acelerar 10x sem virar um dev que não sabe nada quando a internet cai.',
+    title: 'Meu caro amigo ChatGPT',
+    desc: 'Como usar IA sem virar dependente. O perigo real da muleta. Como aproveitar sem abrir mão de aprender de verdade.',
   },
   {
     n: '05',
-    title: 'Git, terminal e as ferramentas que separam o amador do profissional',
-    desc: 'O kit básico que todo dev precisa dominar antes de tentar qualquer vaga. Sem isso, você não passa do primeiro filtro.',
+    title: 'A Vida Real de um Programador',
+    desc: 'Home office, escritório, híbrido. O que ninguém te conta sobre o dia a dia. A rotina real — com pausas, cachorros e caminhada na beira-mar.',
   },
   {
     n: '06',
-    title: 'Construindo um portfólio que recruta paga atenção',
-    desc: '3 projetos que valem mais que 30 clones de to-do list. Como pensar em projetos que demonstram que você sabe entregar.',
+    title: 'Tenha Qualidade de Vida',
+    desc: 'Por que a área romantiza o excesso e como isso destrói carreiras. Como proteger sua saúde mental sem abrir mão da ambição.',
   },
   {
     n: '07',
-    title: 'Inglês para devs em 60 dias',
-    desc: 'Você não precisa falar como o Obama. Precisa ler doc, entender PR review e escrever commit decente. Te mostro como.',
+    title: 'Como Conseguir o Primeiro Emprego',
+    desc: 'O que realmente pesa na contratação (não é só técnico). Portfólio, LinkedIn, como negociar salário, como se sair bem na entrevista.',
   },
   {
     n: '08',
-    title: 'LinkedIn, GitHub e a arte do posicionamento',
-    desc: 'Por que devs melhores que você ganham menos. Spoiler: não é técnico, é posicionamento. Como construir o seu.',
+    title: 'Inglês: A Chave que Abre as Maiores Portas',
+    desc: 'A entrevista que fugi de vergonha. Como aprendi na prática. O que mudou na minha carreira quando parei de ter medo de errar.',
   },
   {
     n: '09',
-    title: 'Entrevista técnica sem trauma',
-    desc: 'O que cai de verdade, como estudar leetcode sem virar maluco, e como responder "qual seu maior defeito" sem cringe.',
+    title: 'O Valor de Saber se Vender',
+    desc: 'O feedback que me acordou. Como virei referência em IA no trabalho. Por que saber se promover não é arrogância — é necessidade.',
   },
   {
     n: '10',
-    title: 'Os primeiros 90 dias no primeiro emprego',
-    desc: 'O guia que ninguém te dá: como não ser demitido, como pedir aumento e como acelerar pra pleno em 1 ano em vez de 3.',
+    title: 'IA na Prática: O Programador Aumentado',
+    desc: 'Ferramentas reais (Copilot, Claude, Cursor), prompts que funcionam, onde a IA ajuda de verdade e onde ainda falha. A diferença entre dev com muleta e programador aumentado.',
   },
 ]
 
@@ -150,7 +150,7 @@ export default function EbookPage() {
             </p>
 
             <ul className="ebook-page-bullets">
-              <li><span aria-hidden="true">✓</span> 10 capítulos · ~180 páginas · leitura de fim de semana</li>
+              <li><span aria-hidden="true">✓</span> 10 capítulos · 25 páginas densas · leitura de 2-3 horas</li>
               <li><span aria-hidden="true">✓</span> PDF + ePub · acesso vitalício · atualizações grátis</li>
               <li><span aria-hidden="true">✓</span> 7 dias de garantia · risco zero</li>
             </ul>
@@ -205,7 +205,7 @@ export default function EbookPage() {
             <div className="ebook-page-pain-card">
               <span className="ebook-page-pain-emoji" aria-hidden="true">🤖</span>
               <h3>Medo da IA</h3>
-              <p>&quot;Ainda vale começar agora se a IA vai substituir todo mundo?&quot; — Spoiler: vale mais do que nunca. Te explico por quê.</p>
+              <p>A IA não vai substituir o programador. Mas um dev que sabe usar IA vai substituir um que não sabe. Esse livro te coloca do lado certo dessa equação.</p>
             </div>
           </div>
         </div>
@@ -265,47 +265,6 @@ export default function EbookPage() {
         </div>
       </section>
 
-      <section className="ebook-page-section ebook-page-bonus">
-        <div className="ebook-page-section-inner">
-          <p className="ebook-page-kicker">// bônus inclusos</p>
-          <h2 className="ebook-page-h2">E mais 3 bônus que valem o preço do livro inteiro:</h2>
-
-          <div className="ebook-page-bonus-grid">
-            <div className="ebook-page-bonus-card">
-              <span className="ebook-page-bonus-tag">Bônus #1</span>
-              <h3>Checklist do primeiro projeto</h3>
-              <p>
-                PDF imprimível com 47 itens de validação. Do README ao deploy. Use
-                em qualquer projeto pro resto da sua carreira.
-              </p>
-              <span className="ebook-page-bonus-value">Valor: R$ 47</span>
-            </div>
-            <div className="ebook-page-bonus-card">
-              <span className="ebook-page-bonus-tag">Bônus #2</span>
-              <h3>Templates de prompts pra IA</h3>
-              <p>
-                40+ prompts testados pra acelerar code review, debug, refactor
-                e estudo. Copia, cola, ganha 2h por dia.
-              </p>
-              <span className="ebook-page-bonus-value">Valor: R$ 67</span>
-            </div>
-            <div className="ebook-page-bonus-card">
-              <span className="ebook-page-bonus-tag">Bônus #3</span>
-              <h3>Guia de salário dev BR 2026</h3>
-              <p>
-                Faixa salarial real por nível e stack — coletado de 500+ devs.
-                Pare de aceitar a primeira oferta que aparecer.
-              </p>
-              <span className="ebook-page-bonus-value">Valor: R$ 37</span>
-            </div>
-          </div>
-
-          <p className="ebook-page-bonus-total">
-            Total dos bônus: <s>R$ 151</s> · <strong>Grátis</strong> com o eBook.
-          </p>
-        </div>
-      </section>
-
       <section className="ebook-page-section ebook-page-audience">
         <div className="ebook-page-section-inner ebook-page-audience-grid">
           <div className="ebook-page-audience-card ebook-page-audience-yes">
@@ -341,15 +300,15 @@ export default function EbookPage() {
             <p className="ebook-page-kicker">// sobre o autor</p>
             <h2 className="ebook-page-h2">Gabriel Segalla</h2>
             <p className="ebook-page-paragraph">
-              Dev fullstack há mais de 10 anos. Passei por startups bagunçadas,
-              consultorias enormes e times remotos espalhados pelo mundo. Já
-              contratei, já fui demitido, já fiz code review de gente que sabia
-              mais que eu e de gente que não sabia separar HTML de CSS.
+              Dev fullstack há mais de 10 anos. Comecei como jovem aprendiz ganhando
+              R$300/mês numa farmácia, fazendo escola de manhã, vôlei à tarde e curso
+              técnico à noite. Passei por startups, instituto de pesquisa, freelance
+              para clientes dos EUA, e hoje trabalho numa empresa internacional de
+              tecnologia — fazendo apresentações para times em outros países.
             </p>
             <p className="ebook-page-paragraph">
-              Esse livro é o destilado de tudo que eu queria ter sabido em
-              2014, quando eu tava igual você: travado, perdido e cansado de curso
-              que não termina nunca.
+              Esse livro é o destilado de tudo que eu vivi. Não é teoria. É o que
+              eu fiz, o que eu errei, e o que eu aprendi.
             </p>
             <div className="ebook-page-author-stats">
               <div>
@@ -357,12 +316,11 @@ export default function EbookPage() {
                 <span>anos como dev</span>
               </div>
               <div>
-                <strong>50+</strong>
-                <span>devs mentorados</span>
+                <strong>3</strong>
+                <span>países de atuação</span>
               </div>
               <div>
-                <strong>5</strong>
-                <span>países de clientes</span>
+                <strong>React + Python</strong>
               </div>
             </div>
           </div>
@@ -413,7 +371,7 @@ export default function EbookPage() {
           <h2 className="ebook-page-final-cta-h2">
             Ou você gasta <strong>R$ 27</strong> agora,
             <br />
-            ou outros 2 anos rodando em círculos.
+            ou outros 2 anos sem direção.
           </h2>
           <p className="ebook-page-paragraph">
             O preço de lançamento sobe pra R$ 67 em breve. Acesso vitalício,

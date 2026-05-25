@@ -1,0 +1,13 @@
+{
+  "runId": "20260525-171957-96c4",
+  "createdAt": "2026-05-25T17:20:00Z",
+  "runDir": "/Users/apple/Downloads/segalla-blog-v2/.cursor/skills/segalla-blog-pipeline/runs/20260525-171957-96c4",
+  "phases": {
+    "init": "done",
+    "research": "done",
+    "write": "done",
+    "publish": "done"
+  },
+  "slug": "hype-hermes-agent-nous-research",
+  "postUrl": "https://hello-world-blog-xi.vercel.app/admin/posts"
+}

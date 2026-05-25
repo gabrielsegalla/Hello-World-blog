@@ -1,0 +1,18 @@
+{
+  "slug": "hype-hermes-agent-nous-research",
+  "images": [
+    {
+      "id": "cover",
+      "role": "cover",
+      "alt": "Ilustração abstrata de agente de IA open source com camadas de memória e skills crescentes",
+      "prompt": "Minimal tech blog illustration, dark background #0a0a14, subtle purple accent #7c3aed, clean flat design with soft glow, developer workspace aesthetic, no text, no watermark, no logo, professional editorial style, 16:9 composition, abstract open-source AI agent with growing skill library nodes connected by lines, wide cinematic composition, single focal point, moody lighting"
+    },
+    {
+      "id": "fig-01",
+      "role": "inline",
+      "alt": "Diagrama de três camadas de memória: perfil do usuário, notas do agente e histórico de sessões",
+      "prompt": "Minimal tech blog illustration, dark background #0a0a14, subtle purple accent #7c3aed, clean flat design with soft glow, no text, no letters, no words, simple diagram showing three stacked memory layers for AI agent, isometric flat style, 2-3 elements maximum, high contrast purple highlights, 16:9 composition",
+      "afterHeading": "O que o Hermes Agent promete (e como tenta cumprir)"
+    }
+  ]
+}

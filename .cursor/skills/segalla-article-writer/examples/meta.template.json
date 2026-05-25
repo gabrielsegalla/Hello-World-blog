@@ -1,0 +1,9 @@
+{
+  "title": "Título final do artigo",
+  "slug": "slug-do-artigo",
+  "subtitle": "Complemento do título, sem repetir",
+  "excerpt": "Resumo de 1 a 2 frases para listagem e SEO.",
+  "category": "IA na Prática",
+  "tags": "IA,Dev,Produtividade",
+  "readTime": 10
+}

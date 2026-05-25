@@ -144,7 +144,7 @@ export default function PostEditor({ initial }: { initial?: PostData }) {
               <input
                 value={form.coverImage ?? ''}
                 onChange={e => set('coverImage', e.target.value || null)}
-                placeholder="https://seu-bucket.supabase.co/storage/v1/object/public/covers/..."
+                placeholder="/uploads/posts/minha-capa.png ou URL completa"
                 style={inp}
               />
 

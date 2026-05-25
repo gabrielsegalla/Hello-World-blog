@@ -1,0 +1,9 @@
+{
+  "title": "Modelo local de 8B não basta para agente de código: o que guardrails mudam na prática",
+  "slug": "guardrails-agentes-codigo-modelos-locais",
+  "subtitle": "A matemática de falha composta e a infraestrutura que está faltando no seu workflow",
+  "excerpt": "Rodar LLM local para agente parece barato até você fazer a conta de quantos passos precisam acertar seguidos. Guardrails, plano antes de implementar e revisão humana mudam o jogo.",
+  "category": "IA na Prática",
+  "tags": "IA,Agentes,DevTools,Open Source,Produtividade",
+  "readTime": 11
+}

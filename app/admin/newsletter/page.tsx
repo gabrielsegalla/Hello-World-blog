@@ -50,13 +50,10 @@ export default function AdminNewsletterPage() {
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 36, flexWrap: 'wrap', gap: 12 }}>
         <div>
           <p style={{ fontSize: 11, color: '#7c3aed', letterSpacing: '.12em', marginBottom: 4, fontFamily: "'JetBrains Mono',monospace" }}>
-            // admin / newsletter
+            // newsletter
           </p>
           <h1 style={{ fontSize: 22, fontWeight: 700, color: '#fff' }}>Enviar Newsletter</h1>
         </div>
-        <Link href="/admin/posts" style={{ fontSize: 12, color: '#7a9bbf', padding: '8px 16px', border: '1px solid #1e1b4b', borderRadius: 6 }}>
-          ← Voltar aos posts
-        </Link>
       </div>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: 24, alignItems: 'start' }}>

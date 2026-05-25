@@ -8,23 +8,27 @@
     "db:push": "prisma db push && node prisma/ensure-schema.js",
     "start": "next start",
     "postinstall": "prisma generate",
-    "seed": "node prisma/seed.js"
+    "seed": "node prisma/seed.js",
+    "chatgpt:auth": "node scripts/chatgpt-web/setup-auth.mjs",
+    "chatgpt:image": "node scripts/chatgpt-web/generate-image.mjs",
+    "chatgpt:2fa": "node scripts/chatgpt-web/submit-2fa.mjs"
   },
   "dependencies": {
-    "next": "14.2.35",
-    "react": "^18",
-    "react-dom": "^18",
     "@prisma/client": "^5.14.0",
-    "prisma": "^5.14.0",
-    "marked": "^12.0.0",
     "bcryptjs": "^2.4.3",
     "jose": "^5.9.6",
+    "marked": "^12.0.0",
+    "next": "14.2.35",
+    "prisma": "^5.14.0",
+    "react": "^18",
+    "react-dom": "^18",
     "resend": "^3.2.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/bcryptjs": "^2.4.6",
+    "playwright": "^1.60.0",
     "typescript": "^5"
   }
 }

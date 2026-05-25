@@ -21,6 +21,7 @@ model Post {
   published Boolean  @default(false)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  instagramCarousels InstagramCarousel[]
 }
 
 model Subscriber {
@@ -35,4 +36,47 @@ model Admin {
   id       Int    @id @default(autoincrement())
   email    String @unique
   password String
+}
+
+model InstagramAccount {
+  id              Int      @id @default(autoincrement())
+  igUserId        String   @unique
+  username        String
+  pageId          String
+  pageName        String?
+  accessToken     String
+  tokenExpiresAt  DateTime?
+  connectedAt     DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model InstagramCarousel {
+  id            Int       @id @default(autoincrement())
+  postId        Int?
+  post          Post?     @relation(fields: [postId], references: [id], onDelete: SetNull)
+  title         String
+  caption       String    @default("")
+  hashtags      String    @default("")
+  status        String    @default("draft")
+  scheduledAt   DateTime?
+  publishedAt   DateTime?
+  igMediaId     String?
+  errorMessage  String?
+  slides        InstagramSlide[]
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model InstagramSlide {
+  id          Int               @id @default(autoincrement())
+  carouselId  Int
+  carousel    InstagramCarousel @relation(fields: [carouselId], references: [id], onDelete: Cascade)
+  order       Int
+  headline    String
+  bodyText    String            @default("")
+  imageUrl    String?
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+
+  @@unique([carouselId, order])
 }
