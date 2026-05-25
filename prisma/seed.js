@@ -3,13 +3,17 @@ const bcrypt = require('bcryptjs')
 const prisma = new PrismaClient()
 
 async function main() {
-  const email = process.env.ADMIN_EMAIL || 'gabriel@segalla.dev'
+  const email = (process.env.ADMIN_EMAIL || 'gabriel@segalla.dev').trim().toLowerCase()
   const password = process.env.ADMIN_PASSWORD || 'changeme123'
+  const hash = await bcrypt.hash(password, 10)
+
   await prisma.admin.upsert({
     where: { email },
-    update: {},
-    create: { email, password: await bcrypt.hash(password, 10) },
+    update: { password: hash },
+    create: { email, password: hash },
   })
+
+  console.log(`✅ Admin sincronizado: ${email}`)
 
   await prisma.post.upsert({
     where: { slug: 'como-uso-ia-no-trabalho-real' },

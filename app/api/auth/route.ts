@@ -4,7 +4,8 @@ import bcrypt from 'bcryptjs'
 import { signToken, COOKIE } from '@/lib/auth'
 
 export async function POST(req: NextRequest) {
-  const { email, password } = await req.json()
+  const { email: rawEmail, password } = await req.json()
+  const email = String(rawEmail || '').trim().toLowerCase()
   if (!email || !password) {
     return NextResponse.json({ error: 'Email e senha são obrigatórios' }, { status: 400 })
   }
