@@ -3,11 +3,8 @@ import Link from 'next/link'
 import { useEffect, useState } from 'react'
 
 const NAV_LINKS = [
-  { href: '/', label: 'Início' },
+  { href: '/', label: 'Home' },
   { href: '/artigos', label: 'Artigos' },
-  { href: '/artigos', label: 'Categorias' },
-  { href: '/ebook', label: 'eBook' },
-  { href: '/#sobre', label: 'Sobre' },
 ]
 
 export default function Navbar() {
@@ -35,10 +32,9 @@ export default function Navbar() {
         </Link>
 
         <div className="navbar-desktop">
-          <Link href="/" className="nav-link">Início</Link>
-          <Link href="/artigos" className="nav-link">Artigos</Link>
-          <Link href="/artigos" className="nav-link">Categorias</Link>
-          <Link href="/#sobre" className="nav-link">Sobre</Link>
+          {NAV_LINKS.map(l => (
+            <Link key={l.href} href={l.href} className="nav-link">{l.label}</Link>
+          ))}
         </div>
 
         <div className="navbar-actions">
@@ -61,7 +57,7 @@ export default function Navbar() {
       {menuOpen && (
         <div className="navbar-mobile">
           {NAV_LINKS.map(l => (
-            <Link key={l.label} href={l.href} className="nav-link-mobile" onClick={() => setMenuOpen(false)}>
+            <Link key={l.href} href={l.href} className="nav-link-mobile" onClick={() => setMenuOpen(false)}>
               {l.label}
             </Link>
           ))}
