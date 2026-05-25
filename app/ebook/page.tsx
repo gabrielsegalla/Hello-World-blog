@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import BookTilt from '@/components/BookTilt'
+import EbookCheckoutLink from '@/components/EbookCheckoutLink'
+import EbookViewContentTracker from '@/components/EbookViewContentTracker'
 import { SITE_URL } from '@/lib/site'
 
 const KIWIFY_URL = process.env.NEXT_PUBLIC_KIWIFY_URL || 'https://kiwify.com.br'
@@ -114,6 +116,7 @@ const FAQ = [
 export default function EbookPage() {
   return (
     <main className="ebook-page">
+      <EbookViewContentTracker />
       <header className="ebook-page-topbar">
         <div className="ebook-page-topbar-inner">
           <Link href="/" className="ebook-page-topbar-brand">
@@ -162,10 +165,10 @@ export default function EbookPage() {
                 <span className="ebook-hero-price-value">27</span>
                 <span className="ebook-hero-price-pay">pagamento único · sem assinatura</span>
               </div>
-              <Link href={KIWIFY_URL} target="_blank" className="ebook-hero-button">
+              <EbookCheckoutLink href={KIWIFY_URL} target="_blank" className="ebook-hero-button">
                 Garantir meu eBook
                 <span aria-hidden="true">→</span>
-              </Link>
+              </EbookCheckoutLink>
             </div>
             <p className="ebook-page-microcopy">
               💳 Pix, cartão em até 12x ou boleto · Entrega imediata por email
@@ -379,10 +382,10 @@ export default function EbookPage() {
           </p>
 
           <div className="ebook-page-final-cta-row">
-            <Link href={KIWIFY_URL} target="_blank" className="ebook-hero-button ebook-page-final-button">
+            <EbookCheckoutLink href={KIWIFY_URL} target="_blank" className="ebook-hero-button ebook-page-final-button">
               Garantir meu eBook por R$ 27
               <span aria-hidden="true">→</span>
-            </Link>
+            </EbookCheckoutLink>
           </div>
           <p className="ebook-page-microcopy">
             🔒 Pagamento seguro via Kiwify · Pix, cartão em até 12x ou boleto
